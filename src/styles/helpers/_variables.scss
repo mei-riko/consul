@@ -1,0 +1,131 @@
+$white                : #ffffff;
+$black                : #1A1A1A;
+
+$brown                : #4B403F;
+$brown-light          : #9E877F;
+$green                : #415E4A;
+$yellow               : #C4872F;
+$red                  : #BE4141;
+
+$grey                 : #EBEBEB;
+$grey-light           : #F7F7F5;
+
+$action               : $yellow;
+
+$body-color           : $brown;
+$body-bg              : $white;
+
+$border-color         : $grey;
+$border-radius        : 12px;
+
+$link-color           : $brown !default;
+$link-hover-color     : $green !default;
+$link-decoration      : none !default;
+$link-hover-decoration: underline !default;
+
+$transition-base      : 0.3s;
+
+$grid-breakpoints: (
+  xs: 375px,
+  sm: 576px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1440px
+) !default;
+
+$container-max-widths: (
+  // xs: 320px,
+  xs: 100%,
+  sm: 100%,
+  md: 100%,
+  lg: 100%,
+  xl: 100%,
+  hd: 100%,
+) !default;
+
+
+$font-weight          : 400;
+$font-weight-bolder   : 500;
+$font-weight-bold     : 700;
+
+$dt-font-weight:      $font-weight-bold !default;
+
+$line-height          : 1.6;
+$line-height-base     : 1.4;
+
+$font-size-base       : 1rem;
+$font-weight-base     : $font-weight;
+
+$font-family-heading  : "Nunito Sans", "Helvetica Neue", Arial,  sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-base     : "Nunito Sans", "Helvetica Neue", Arial,  sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,   "Liberation Mono",   "Courier New",    monospace !default;
+
+$font-size: (
+  // small
+  xs: 12px,
+  // btn
+  sm: 14px,
+  // main
+  md: 14px,
+  // lead
+  lg: 16px
+) !default;
+
+$heading: (
+  h1: 48px,
+  h2: 40px,
+  h3: 32px,
+  h4: 24px,
+  h5: 18px,
+  h6: 14px,
+) !default;
+
+$letter-spacing       : 0.04em;
+
+$grid-columns         : 12 !default;
+$grid-gutter-width    : 24px !default;
+
+$spacer-gutter        : 12px !default;
+$spacer               : 24px!default;
+$spacers              : ()  !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$spacers: map-merge(
+  (
+    0: 0,
+    1: 24px,
+    2: 36px,
+    3: 48px,
+    4: 60px,
+    5: 72px
+  ),
+  $spacers
+);
+
+$headings-margin-bottom: $spacer !default;
+$headings-font-family  : null !default;
+$headings-font-weight  : 500 !default;
+$headings-line-height  : 1.0 !default;
+$headings-color        : null !default;
+
+$paragraph-margin-bottom: $spacer-gutter !default;
+
+$table-cell-padding   : 10px !default;
+$table-cell-padding-sm: 6px !default;
+$table-caption-color  : #242424 !default;
+
+$label-margin-bottom: 10px;
+
+$enable-grid-classes              : true !default;
+$enable-pointer-cursor-for-buttons: true !default;
+
+// Utilities
+
+$displays : none,   inline,   inline-block, block, table, table-row, table-cell, flex, inline-flex !default;
+$overflows: auto,   hidden !default;
+$positions: static, relative, absolute,     fixed, sticky !default;
+
+
+// Printing
+
+$print-page-size     : a3 !default;
+$print-body-min-width: map-get($grid-breakpoints, "lg") !default;
