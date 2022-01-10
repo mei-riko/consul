@@ -2,8 +2,8 @@
     border: none;
     outline: none;
     box-shadow: none;
+    text-decoration: none;
 
-    font-family: $font-family-heading;
     font-size: map-get($map: $font-size, $key: "md");
     line-height: $line-height-base;
     font-weight: $font-weight-bold;

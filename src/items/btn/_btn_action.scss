@@ -1,23 +1,17 @@
 .btn_action{
     border-radius: $border-radius;
     color: $white;
-    background: $green1;
+    background: $yellow;
     text-align: center;
 
-    padding: 19px 45px;
+    padding: $spacer/2 $spacer;
 
     &:hover, &:focus{
-        background-color: $green3;
+        background-color: darken($color: $yellow, $amount: 10);
         color: $white;
     }
 }
 @media all and (max-width: map-get($grid-breakpoints, 'md')){
-    .btn_action{
-        padding: 20px 35px 18px;
-    }
 }
 @media all and (max-width: map-get($grid-breakpoints, 'xs')){
-    .btn_action{
-        padding: 16px 40px;
-    }
 }

@@ -2,16 +2,14 @@
     border: none;
     outline: none;
 
-    font-family: $font-family-heading;
     font-size: map-get($map: $font-size, $key: "md");
     line-height: $line-height-base;
-
+    
     border: 1px solid $white;
     border-radius: $border-radius;
     background: $white;
-    box-shadow: 0px 0px 2px 0px rgba(76, 111, 255, 0.3);
 
-    padding: 18px 16px;
+    padding: $spacer/2 $spacer;
 
     &::placeholder{
         filter: opacity(1);
@@ -24,6 +22,16 @@
         }
     }
 
+    // Modification
+    &_full{
+        width: 100%;
+    }
+    &_inverse{
+        background: $grey-light;
+        border-color: $grey;
+    }
+
+    // JS State
     &--error{
         border-color: $red;
     }

@@ -3,7 +3,7 @@ h1, h2, h3, h4, h5, h6,
     font-family: $font-family-heading;
     font-weight: $headings-font-weight;
     line-height: $headings-line-height;
-    margin-bottom: $headings-margin-bottom;
+    margin-bottom: $headings-margin-bottom/2;
 
     &:last-child{
         margin-bottom: 0;
@@ -11,7 +11,7 @@ h1, h2, h3, h4, h5, h6,
 }
 * + h1, * + h2, * + h3, * + h4, * + h5, * + h6,
 * + .h1, * + .h2, * + .h3, * + .h4, * + .h5, * + .h6{
-    margin-top: $headings-margin-bottom/2;
+    margin-top: $headings-margin-bottom;
 }
 
 // $heading: (

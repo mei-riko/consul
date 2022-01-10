@@ -1,0 +1,109 @@
+.item_programm{
+    padding: $spacer;
+    border-radius: $border-radius;
+    background: $grey-light;
+
+    display: grid;
+    grid-gap: $spacer;
+    grid-template-rows: 2.4em auto;
+    
+    &__inform{
+        position: absolute;
+        top: $spacer-gutter; 
+        right: $spacer-gutter;
+
+        width: 16px;
+        height: 16px;
+
+        background: url("../icon/info.svg") no-repeat center / contain;
+
+        transition: $transition-base;
+        cursor: pointer;
+
+        &:hover{
+            filter: opacity(.5);
+        }
+    }
+    &__title{
+        display: block;
+
+        font-size: map-get($map: $font-size, $key: lg);
+        font-weight: $font-weight-bold;
+        line-height: $headings-line-height;
+
+        text-decoration: none;
+        color: $brown;
+
+        margin-bottom: $spacer;
+
+        max-width: calc(100% - 16px);
+
+        &:hover{
+            color: $yellow;
+        }
+    }
+    &__subtitle{
+        color: $brown-light;
+        margin-bottom: $spacer-gutter;
+    }
+    &__list{
+        &-item{
+            display: grid;
+            grid-gap: $spacer-gutter;
+            grid-template-columns: 16px auto;
+            align-items: center;
+
+            margin-bottom: $spacer-gutter;
+
+            &:before{
+                content: '';
+                display: block;
+                width: 16px;
+                height: 16px;
+
+                background: url("../icon/mdi-light_check.svg") no-repeat center / contain;
+            }
+
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+    &__order{
+        margin: $spacer 0;
+        padding: $spacer 0;
+        border-top: 1px solid $grey;
+        border-bottom: 1px solid $grey;
+
+        &-link{
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: map-get($map: $font-size, $key: xs);
+            font-weight: $font-weight-bold;
+            letter-spacing: 0.08em;
+        }
+    }
+    &__link{
+        &-item{
+            display: grid;
+            grid-gap: $spacer-gutter;
+            grid-template-columns: 16px auto;
+            align-items: flex-start;
+
+            margin-bottom: $spacer-gutter;
+
+            &:before{
+                content: '';
+                display: block;
+                width: 16px;
+                height: 16px;
+
+                background: url("../icon/jam_arrow-up-right.svg") no-repeat center / contain;
+            }
+
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+}

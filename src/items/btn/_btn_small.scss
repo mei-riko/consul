@@ -1,0 +1,4 @@
+.btn_small{
+    font-size: map-get($map: $font-size, $key: xs);
+    padding: $spacer-gutter/2 $spacer-gutter;
+}

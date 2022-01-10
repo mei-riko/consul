@@ -1,5 +1,5 @@
 import $ from 'jquery';
-import {navbarMobileClose} from '../items/slider/slider';
+// import {navbarMobileClose} from '../items/slider/slider';
 
 $(document).on('mouseup', function (e){
     let navbarActive = $('.nav.nav--open');

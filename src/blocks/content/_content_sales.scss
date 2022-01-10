@@ -1,0 +1,6 @@
+.content_sales{
+    background-color: $green;
+    color: $white;
+    padding: map-get($map: $spacers, $key: 2);
+    border-radius: $border-radius;
+}

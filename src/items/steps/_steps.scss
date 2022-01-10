@@ -1,0 +1,33 @@
+.steps{
+    background-color: $white;
+    border-radius: $border-radius;
+    padding: map-get($map: $spacers, $key: 2);
+
+    &__list{
+        margin-top: map-get($map: $spacers, $key: 2);
+        display: grid;
+        grid-gap: $spacer;
+        grid-template-columns: 1fr;
+
+        &-item{
+            display: grid;
+            grid-gap: $spacer;
+            grid-template-columns: 36px auto;
+            align-items: center;
+        }
+        &-num{
+            width: 36px;
+            height: 36px;
+            line-height: 36px;
+            text-align: center;
+
+            background-color: $grey-light;
+            border-radius: 50%;
+        }
+    }
+    &__footer{
+        padding-top: map-get($map: $spacers, $key: 1);
+        margin-top: map-get($map: $spacers, $key: 1);
+        border-top: 1px solid $border-color;
+    }
+}

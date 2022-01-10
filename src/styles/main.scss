@@ -1,14 +1,44 @@
 @import "../styles/helpers/variables";
 
-// @import "../items/nav/nav";
+@import "../items/nav/nav";
 
-// @import "../items/btn/btn";
-// @import "../items/btn/btn_action";
+@import "../items/btn/btn";
+@import "../items/btn/btn_action";
+@import "../items/btn/btn_small";
 
-// @import "../items/form/form";
-// @import "../items/input/input";
+@import "../items/form/form";
+@import "../items/form/form_cta";
 
-// @import "../items/modal/modal";
+@import "../items/input/input";
+
+@import "../items/modal/modal";
+
+@import "../items/label/label";
+@import "../items/label/label_action";
+
+@import "../items/slider/swiper";
+@import "../items/slider/slider";
+@import "../items/slider/slider_review";
+@import "../items/slider/slider_sales";
+
+@import "../items/advantage/advantage";
+
+@import "../items/item/item";
+@import "../items/item/item_link";
+@import "../items/item/item_programm";
+@import "../items/item/item_sale";
+@import "../items/item/item_news";
+
+@import "../items/steps/steps";
+
+@import "../items/review/review";
+
+@import "../items/toggle/toggle";
 
 @import "../blocks/header/header.scss";
 @import "../blocks/footer/footer.scss";
+
+@import "../blocks/content/content";
+@import "../blocks/content/content_slider";
+@import "../blocks/content/content_secondary";
+@import "../blocks/content/content_sales";

@@ -1,25 +1,87 @@
 .header{
-    // display: grid;
-    // grid-gap: map-get($map: $spacers, $key: 2);
-    // grid-template-columns: 200px 1fr;
-
-    // padding: map-get($map: $spacers, $key: 2) 0;
-
-    &__logo{
-        width: 200px;
-        max-width: 100%;
-        // height: 26px;
+    padding: map-get($map: $spacers, $key: 2) 0 map-get($map: $spacers, $key: 4);
+    background: $black;
+    color: $white;
+    
+    &__grid{
+        display: grid;
+        grid-gap: $spacer;
+        grid-template-columns: 160px 1fr auto 160px;
+        grid-template-areas: 
+            "logo subnav contact phone"
+            "nav nav nav info";
+        align-items: center;
     }
-    // &__toggle{
-    //     display: none;
-    //     height: 30px;
-    //     cursor: pointer;
-    //     transition: $transition-base;
+    &__logo{
+        grid-area: logo;
 
-    //     &:hover, &:focus{
-    //         filter: opacity(.4);
-    //     }
-    // }
+        max-width: 100%;
+        height: 26px;
+    }
+    &__nav-additional{
+        grid-area: subnav;
+    }
+    &__nav{
+        grid-area: nav;
+    }
+    &__contact{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        &-item{
+            padding-left: map-get($map: $spacers, $key: 1);
+            font-size: map-get($map: $font-size, $key: xs);
+            color: $white;
+            filter: opacity(.75);
+
+            &:hover, &:focus{
+                color: $yellow;
+                filter: opacity(1);
+                text-decoration: none;
+            }
+        }
+    }
+    &__icon{
+        margin-right: $spacer-gutter;
+        transition: $transition-base;
+    }
+    &__phone{
+        grid-area: phone;
+
+        font-size: map-get($map: $heading, $key: h5);
+        font-weight: $font-weight-bold;
+        color: $white;
+        text-align: right;
+
+        text-decoration: none;
+        white-space: nowrap;
+
+        &:hover, &:focus{
+            color: $yellow;
+            text-decoration: none;
+        }
+    }
+    &__inform{
+        grid-area: info;
+
+        font-size: map-get($map: $font-size, $key: xs);
+        text-align: right;
+        filter: opacity(.75);
+    }
+    &__toggle{
+        display: none;
+        height: 30px;
+        cursor: pointer;
+        transition: $transition-base;
+
+        &:hover, &:focus{
+            filter: opacity(.4);
+        }
+    }
+    &__child-nav{
+        display: none;
+    }
 }
 // < 1440px
 @media all and (max-width: map-get($grid-breakpoints, 'xl')){

@@ -1,0 +1,19 @@
+.item_sale{
+    background-color: $white;
+    color: $black;
+    border-radius: $border-radius;
+    padding: $spacer;
+
+    text-align: center;
+
+    &__title{
+        font-weight: $font-weight-bold;
+        font-size: map-get($map: $font-size, $key: xs);
+        text-transform: uppercase;
+        color: $yellow;
+        margin: $spacer-gutter/2 0px;
+    }
+    &__icon{
+        margin: 0 auto;
+    }
+}

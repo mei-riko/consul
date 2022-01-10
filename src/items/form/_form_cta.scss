@@ -1,0 +1,23 @@
+.form_cta{
+    width: 575px;
+    max-width: 100%;
+    margin-left: auto;
+
+    &__row{
+        display: grid;
+        grid-gap: $spacer-gutter;
+        grid-template-columns: 1fr 180px;
+
+        margin-top: $spacer-gutter;
+    }
+}
+
+// < 1440px
+@media all and (max-width: map-get($grid-breakpoints, 'xl')){
+}
+// < 1024px
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+}
+// < 375px
+@media all and (max-width: map-get($grid-breakpoints, 'xs')){
+}

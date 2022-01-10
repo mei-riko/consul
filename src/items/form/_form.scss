@@ -1,3 +1,14 @@
 .form{
     margin-bottom: 0;
+
+    &__agree{
+        margin-top: $spacer;
+        font-size: map-get($map: $font-size, $key: xs);
+        line-height: $headings-line-height;
+        // color: $brown-light;
+        filter: opacity(.5);
+
+        width: 400px;
+        max-width: 100%;
+    }
 }

@@ -1,0 +1,29 @@
+.slider_review{
+    &:not(.swiper-initialized){
+        .slider_review__wrapper{
+            display: grid;
+            grid-gap: $spacer;
+            grid-template-columns: repeat(2, 1fr);    
+        }
+        .slider_review__arrows{
+            display: none;
+        }
+    }
+    &.swiper-initialized{
+        margin-top: -(60px);
+    }
+
+    &__item{
+        display: flex;
+        align-items: stretch;
+    }
+    &__arrows{
+        display: grid;
+        grid-gap: $spacer-gutter;
+        grid-template-columns: repeat(2, 16px);
+
+        justify-content: flex-end;
+
+        margin-bottom: map-get($map: $spacers, $key: 3);
+    }
+}

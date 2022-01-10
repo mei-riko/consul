@@ -1,0 +1,40 @@
+.item_link{
+    display: block;
+    text-decoration: none;
+    color: $brown;
+
+    padding: $spacer;
+    padding-right: map-get($map: $spacers, $key: 3);
+
+    background: $white;
+    border-radius: $border-radius;
+
+    &__intro{
+        font-size: map-get($map: $font-size, $key: xs);
+        color: $brown-light;
+        margin-top: $spacer-gutter/2;
+    }
+
+    &:hover{
+        color: $yellow;
+        text-decoration: none;
+
+        &:after{
+            transform: translateX(6px);
+        }
+    }
+
+    &:after{
+        position: absolute;
+        top: calc( 50% - 12px );
+        right: 24px;
+
+        content: '';
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background: url('../icon/mdi-light_arrow-right.svg') no-repeat center / contain;
+
+        transition: $transition-base;
+    }
+}

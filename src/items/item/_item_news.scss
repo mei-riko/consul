@@ -1,0 +1,20 @@
+.item_news{
+    display: grid;
+    grid-gap: $spacer;
+    grid-template-columns: 64px auto;
+
+    text-decoration: none;
+    margin-bottom: $spacer;
+
+    &__date{
+        color: $brown-light;
+    }
+
+    &:last-child{
+        margin-bottom: 0;
+    }
+
+    &:hover{
+        text-decoration: none;
+    }
+}

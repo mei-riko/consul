@@ -1,0 +1,25 @@
+.slider{
+    &__title{
+        font-weight: $font-weight-bold;
+        margin: map-get($map: $spacers, $key: 1) 0;
+    }
+    &__image{
+        overflow: hidden;
+        border-radius: $border-radius;
+    }
+    &__arrow{
+        &.swiper-button-disabled{
+            filter: opacity( .5);
+        }
+        &:not(.swiper-button-disabled):hover{
+            cursor: pointer;
+            path{
+                fill: $black;
+            }
+        }
+
+        path{
+            transition: $transition-base;
+        }
+    }
+}

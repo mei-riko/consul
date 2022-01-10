@@ -1,0 +1,25 @@
+.slider_sales{
+    position: relative;
+
+    &__nav{
+        display: flex;
+        align-items: center;
+
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        z-index: 11;
+
+        transform: translateX($spacer);
+    }
+    &__pagination{
+        display: inline-block;
+        width: auto;
+        padding: 0 $spacer-gutter;
+    }
+    &__item{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: map-get($map: $spacers, $key: 3);
+    }
+}

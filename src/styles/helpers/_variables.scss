@@ -8,7 +8,7 @@ $yellow               : #C4872F;
 $red                  : #BE4141;
 
 $grey                 : #EBEBEB;
-$grey-light           : #F7F7F5;
+$grey-light           : #FAF9FB;
 
 $action               : $yellow;
 
@@ -16,11 +16,11 @@ $body-color           : $brown;
 $body-bg              : $white;
 
 $border-color         : $grey;
-$border-radius        : 12px;
+$border-radius        : 4px;
 
-$link-color           : $brown !default;
-$link-hover-color     : $green !default;
-$link-decoration      : none !default;
+$link-color           : $yellow !default;
+$link-hover-color     : $black !default;
+$link-decoration      : underline !default;
 $link-hover-decoration: underline !default;
 
 $transition-base      : 0.3s;
@@ -40,7 +40,7 @@ $container-max-widths: (
   md: 100%,
   lg: 100%,
   xl: 100%,
-  hd: 100%,
+  hd: 1200px,
 ) !default;
 
 
@@ -96,7 +96,7 @@ $spacers: map-merge(
     2: 36px,
     3: 48px,
     4: 60px,
-    5: 72px
+    5: 72px,
   ),
   $spacers
 );
@@ -104,7 +104,7 @@ $spacers: map-merge(
 $headings-margin-bottom: $spacer !default;
 $headings-font-family  : null !default;
 $headings-font-weight  : 500 !default;
-$headings-line-height  : 1.0 !default;
+$headings-line-height  : 1.2 !default;
 $headings-color        : null !default;
 
 $paragraph-margin-bottom: $spacer-gutter !default;

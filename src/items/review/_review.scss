@@ -1,0 +1,23 @@
+.review{
+    border-radius: $border-radius;
+    background-color: $grey-light;
+    padding: $spacer;
+
+    &__info{
+        display: grid;
+        grid-gap: $spacer;
+        grid-template-columns: 60px auto;
+        align-items: center;
+
+        margin-bottom: $spacer;
+    }
+    &__img{
+        width: 60px;
+        height: 60px;
+        border-radius: $border-radius;
+        background: $white no-repeat center / 48px;
+    }
+    &__name{
+        font-size: map-get($map: $font-size, $key: xs);
+    }
+}

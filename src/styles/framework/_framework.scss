@@ -47,6 +47,7 @@ html,body {
 
 p {
     font-size: 1rem;
+    line-height: $line-height;
     margin-top: 0;
     margin-bottom: $paragraph-margin-bottom;
 
@@ -94,8 +95,7 @@ table{
 .bg-black{background-color: $black;}
 .bg-white{background-color: $white;}
 .bg-grey{background-color: $grey;}
-.bg-light-grey{background-color: $light-grey;}
-.bg-lightest-grey{background-color: $lightest-grey;}
+.bg-light-grey{background-color: $grey-light;}
 
 .text-white{color: $white;}
 .text-black{color: $black;}
@@ -142,6 +142,16 @@ table{
     display: block;
     height: auto;
     max-width: 100%;
+}
+
+.col-stretch{
+    display: flex;
+    align-items: stretch;
+    // flex-direction: column;
+
+    & > * {
+        flex-grow: 1;
+    }
 }
 
 hr, .hr{

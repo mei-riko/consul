@@ -1,0 +1,47 @@
+.content{
+    &__title{
+        font-weight: $font-weight-bold;
+    }
+    &__inform{
+        // column-width: 48%;
+        column-count: 2;
+        column-gap: $spacer;
+    }
+    &__license{
+        display: grid;
+        grid-gap: $spacer;
+        grid-template-columns: repeat(3, 1fr);
+
+        max-width: 720px;
+        margin-left: auto;
+
+        &-item{
+            position: relative;
+            border-radius: $border-radius;
+            overflow: hidden;
+
+            color: $brown;
+            transition: $transition-base;
+
+            &:hover{
+                color: $yellow;
+                filter: grayscale(.5);
+            }
+        }
+        &-title{
+            position: absolute;
+            bottom: $spacer-gutter;
+            left: $spacer-gutter;
+            
+            font-size: map-get($map: $font-size, $key: xs);
+            background: $white;
+            border-radius: $border-radius;
+            padding: $spacer-gutter/2 $spacer-gutter;
+
+            width: calc(100% - 24px);
+        }
+    }
+    &__cta-form{
+        padding-top: map-get($map: $spacers, $key: 3);
+    }
+}
