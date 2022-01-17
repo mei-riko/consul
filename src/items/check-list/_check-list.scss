@@ -1,0 +1,23 @@
+.check-list{
+    display: grid;
+    grid-gap: $spacer-gutter;
+    grid-template-columns: 16px auto;
+    align-items: center;
+
+    margin-bottom: $spacer-gutter/2;
+
+    &:last-child{
+        margin-bottom: 0;
+    }
+
+    &__icon{
+        width: 16px;
+        height: 16px;
+
+        background: url("../icon/mdi-light_check.svg") no-repeat center / contain;
+
+        &_white{
+            background: url("../icon/mdi-light_check_white.svg") no-repeat center / contain;
+        }
+    }
+}

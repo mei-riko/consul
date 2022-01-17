@@ -1,0 +1,25 @@
+.pagination{
+    list-style: none;
+    padding: 0;
+
+    display: grid;
+    grid-gap: $spacer-gutter;
+
+    grid-template-columns: repeat(auto-fill, minmax(26px, auto));
+
+    &__item{
+        text-align: center;
+        border-radius: $border-radius;
+
+        width: 26px;
+        height: 26px;
+        line-height: 26px;
+
+        background: $grey;
+
+        &--active{
+            background: $green;
+            color: $white;
+        }
+    }
+}

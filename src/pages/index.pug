@@ -4,7 +4,7 @@ block variables
     - var pageTitle = "Index Page"
     link(rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css")
 block content
-    section.container 
+    section.container
         .content.content_slider 
             .slider.slider_sales
                 .slider_sales__nav
@@ -98,43 +98,35 @@ block content
                         | с&nbsp;лицензиями и&nbsp;разрешениями компании.
                     a.text-bold(href="info.html") Сведения об образовательной организации
                 .col-md-12.col-lg-8.col-8
-                    .content__license
-                        a.content__license-item(href="../img/license-demo.png" data-fancybox)
+                    .content__slider
+                        a.content__slider-item(href="../img/license-demo.png" data-fancybox)
                             img.img-fluid(src="../img/license-demo.png")
-                            .content__license-title Лицензия на осуществление образовательной деятельности
-                        a.content__license-item(href="../img/license-demo.png" data-fancybox)
+                            .content__slider-title Лицензия на осуществление образовательной деятельности
+                        a.content__slider-item(href="../img/license-demo.png" data-fancybox)
                             img.img-fluid(src="../img/license-demo.png")
-                            .content__license-title Приложение лицензии
-                        a.content__license-item(href="../img/license-demo.png" data-fancybox)
+                            .content__slider-title Приложение лицензии
+                        a.content__slider-item(href="../img/license-demo.png" data-fancybox)
                             img.img-fluid(src="../img/license-demo.png")
-                            .content__license-title Аккредитация организации
+                            .content__slider-title Аккредитация организации
         .content.content_secondary.mt-1
             p.h4.content__title Услуги учебного центра
             .row
                 .mt-1.col-sm-12.col-md-6.col-lg-6.col-4
-                    a.item.item_link(href="#") Аутсорсинг по охране труда
-                        .item_link__intro 8 программ
+                    +item_link("Аутсорсинг по охране труда", "8 программ", "#")
                 .mt-1.col-sm-12.col-md-6.col-lg-6.col-4
-                    a.item.item_link(href="#") Расследование несчастных случаев
-                        .item_link__intro 8 программ
+                    +item_link("Расследование несчастных случаев", "8 программ", "#")
                 .mt-1.col-sm-12.col-md-6.col-lg-6.col-4
-                    a.item.item_link(href="#") Лицензирование и сертификация
-                        .item_link__intro 8 программ
+                    +item_link("Лицензирование и сертификация", "8 программ", "#")
                 .mt-1.col-sm-12.col-md-6.col-lg-6.col-4
-                    a.item.item_link(href="#") Судебное представительство и правовой анализ документов
-                        .item_link__intro 8 программ
+                    +item_link("Судебное представительство и правовой анализ документов", "8 программ", "#")
                 .mt-1.col-sm-12.col-md-6.col-lg-6.col-4
-                    a.item.item_link(href="#") Помощь при вступлении в СРО  и подготовке специалистов
-                        .item_link__intro 8 программ
+                    +item_link("Помощь при вступлении в СРО  и подготовке специалистов", "8 программ", "#")
                 .mt-1.col-sm-12.col-md-6.col-lg-6.col-4
-                    a.item.item_link(href="#") Разработка документов по охране труда (СУОТ)
-                        .item_link__intro 8 программ
+                    +item_link("Разработка документов по охране труда (СУОТ)", "8 программ", "#")
                 .mt-1.col-sm-12.col-md-6.col-lg-6.col-4
-                    a.item.item_link(href="#") Специальная оценка условий труда (СОУТ)
-                        .item_link__intro 8 программ
+                    +item_link("Специальная оценка условий труда (СОУТ)", "8 программ", "#")
                 .mt-1.col-sm-12.col-md-6.col-lg-6.col-4
-                    a.item.item_link(href="#") Помощь при проверках надзорных органов 
-                        .item_link__intro 8 программ
+                    +item_link("Помощь при проверках надзорных органов", "8 программ", "#")
         .content.pt-5.pb-5.mt-1
             .row
                 .col-8
@@ -191,7 +183,7 @@ block content
         .container 
             .row 
                 .col-8
-                    .content.content_sales
+                    .content.content_action
                         p.h4.content__title Акции и спецпредложения
                         .row 
                             .col-6.mb-1
@@ -289,7 +281,7 @@ block content
     section.container.pb-5
         .content
             p.h4.content__title Учебный центр в Санкт-Петербурге «Консул»
-            .content__toggle.toggle
+            .content__toggle
                 p Учебный центр в Санкт-Петербурге Консул предлагает пройти обучение для специалистов, руководителей. Мы предлагаем:
                 ul
                     li Курсы обучения по пожарной безопасности, охране труда и обучение навыкам первой помощи
@@ -300,7 +292,7 @@ block content
                         | <br> Программы подходят для руководителей, специалистов, работников организаций всех отраслей промышленности.
                     li Обучение новой профессии
                         | <br> Все желающие освоить новую рабочую специальность смогут выбрать для себя новую профессию из широкого перечня и пройти обучение.
-                .toggle__content#full
+                .d-none#full
                     p.h5 100% соответствие требованиям
                     p Учебный центр в Санкт-Петербурге соответствует установленным требованиям и нормам, что подтверждает документация:
                     ul
@@ -318,4 +310,4 @@ block content
             .mt-1
                 a.btn.btn_action.btn_small(data-trigger="toggle" href="#" data-toggle="#full" data-status="" data-open="Узнать больше" data-close="Скрыть") Узнать больше
 block footer
-    script(src="https://unpkg.com/swiper@7/swiper-bundle.min.js")   
+    script(src="https://unpkg.com/swiper@7/swiper-bundle.min.js")

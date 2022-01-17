@@ -1,0 +1,37 @@
+.docs{
+    display: grid;
+    grid-gap: $grid-gutter-width;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+
+
+    &__item{
+        display: grid;
+        grid-gap: $spacer-gutter;
+        grid-template-columns: 16px auto;
+        align-items: center;
+
+        padding: $spacer-gutter;
+        border-radius: $border-radius;
+        background-color: $green;
+        color: $white;
+
+        &::before{
+            content: '';
+            display: block;
+
+            width: 16px;
+            height: 16px;
+
+            background: url("../icon/download_icon.svg") no-repeat center / contain;
+        }
+
+        &_link{
+            text-decoration: none;
+            &:hover{
+                text-decoration: none;
+                color: $white;
+                background-color: darken($color: $green, $amount: 6);
+            }
+        }
+    }
+}

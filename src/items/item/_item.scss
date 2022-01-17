@@ -1,3 +1,22 @@
 .item{
     position: relative;
+
+    &__title{
+        font-weight: bold;
+        margin-bottom: $spacer-gutter;
+    }
+    &__label{
+        margin-bottom: $spacer-gutter;
+    }
+    &__image{
+        border-radius: $border-radius;
+    }
+    &__link{
+        padding-left: 42px;
+        background: url('../icon/mdi-light_arrow-right.svg') no-repeat left center / 26px;
+
+        display: flex;
+        align-items: center;
+        min-height: 26px;
+    }
 }

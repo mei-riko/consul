@@ -3,4 +3,10 @@
 
     width: 640px;
     max-width: 100%;
+
+    &__title{
+        font-size: map-get($map: $heading, $key: h4);
+        font-weight: $font-weight-bold;
+        line-height: $headings-line-height;
+    }
 }

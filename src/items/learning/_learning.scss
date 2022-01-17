@@ -1,0 +1,30 @@
+.learning{
+    display: grid;
+    grid-gap: $spacer;
+    grid-template-columns: 48px auto;
+
+    align-items: center;
+
+    padding: $spacer;
+    border-radius: $border-radius;
+    border: 1px solid $border-color;
+    background-color: $white;
+
+    text-decoration: none;
+    color: $black;
+
+    &:hover{
+        background-color: $grey-light;
+        text-decoration: none;
+    }
+
+    &__content{
+        display: grid;
+        grid-gap: $spacer;
+        grid-template-columns: auto 1fr;
+    }
+    &__title{
+        font-size: map-get($map: $heading, $key: h5);
+        font-weight: $font-weight-bold;
+    }
+}

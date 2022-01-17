@@ -1,5 +1,8 @@
+// Border Block With Right Arrow
 .item_link{
-    display: block;
+    display: flex;
+    align-items: center;
+    
     text-decoration: none;
     color: $brown;
 
@@ -8,6 +11,7 @@
 
     background: $white;
     border-radius: $border-radius;
+    border: 1px solid $border-color;
 
     &__intro{
         font-size: map-get($map: $font-size, $key: xs);

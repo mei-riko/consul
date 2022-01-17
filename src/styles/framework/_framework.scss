@@ -99,6 +99,7 @@ table{
 
 .text-white{color: $white;}
 .text-black{color: $black;}
+.text-secondary{color: $brown-light;}
 
 // .overlay{
 //     position: fixed;
@@ -161,11 +162,12 @@ hr, .hr{
     border-bottom: 1px solid $border-color;
 }
 
-// blockquote, .blockquote{
-//     padding: $spacer;
-//     background-color: $body-bg;
-//     border-radius: $border-radius;
-// }
+blockquote, .blockquote{
+    padding: $spacer;
+    background-color: $grey-light;
+    border-left: 4px solid $yellow;
+    border-radius: $border-radius;
+}
 
 @media all and (max-width: map-get($grid-breakpoints, 'xl')){
     .text-xl{

@@ -1,5 +1,47 @@
 .toggle{
+    border-radius: $border-radius;
+    background-color: $grey-light;
+    border: 1px solid $border-color;
+    margin-bottom: $paragraph-margin-bottom;
+
+    &:last-child{
+        margin-bottom: 0;
+    }
+
+    &__title{
+        display: grid;
+        grid-template-columns: auto $spacer;
+        grid-gap: $spacer-gutter;
+
+        padding: $grid-gutter-width;
+        cursor: pointer;
+        transition: $transition-base;
+
+        &:after{
+            content: '';
+            display: block;
+            transition: $transition-base;
+
+            width: $spacer;
+            height: $spacer;
+
+            background: url("../icon/mdi-light_arrow-down.svg") no-repeat center / 24px;
+        }
+
+        &:hover{
+            color: $link-color;
+        }
+
+        &--active{
+            font-weight: $font-weight-bold;
+            &:after{
+                transform: rotate(-180deg);
+            }
+        }
+    }
     &__content{
         display: none;
+
+        padding: 0 $grid-gutter-width $grid-gutter-width;
     }
 }

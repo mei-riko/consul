@@ -1,0 +1,19 @@
+.sidebar{
+    padding: $spacer;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+
+    &__title{
+        font-weight: $font-weight-bold;
+    }
+    &__item{
+        text-decoration: none;
+
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    &__intro{
+        color: $brown-light;
+    }
+}

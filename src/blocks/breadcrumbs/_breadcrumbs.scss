@@ -1,0 +1,31 @@
+.breadcrumbs{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+
+    padding-left: 0;
+    margin-bottom: $spacer-gutter;
+
+    &__item{
+        font-size: map-get($map: $font-size, $key: xs);
+        padding-right: $spacer-gutter;
+        padding-bottom: $spacer-gutter;
+
+        filter: opacity(.5);
+
+        &:after{
+            content: '/';
+            display: inline-block;
+        }
+
+        &_active{
+            &:after{
+                content: '';
+            }
+        }
+    }
+
+    &__link{
+        padding-right: $spacer-gutter;
+    }
+}

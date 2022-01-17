@@ -1,0 +1,5 @@
+.contact{
+    display: grid;
+    grid-gap: $spacer-gutter;
+    grid-template-columns: 26px auto;
+}

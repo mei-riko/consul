@@ -10,8 +10,13 @@
     &__icon{
         width: 72px;
         height: 72px;
-        background: no-repeat center / cover;
+        background: no-repeat center / contain;
         border-radius: $border-radius;
+
+        &_service{
+            width: 48px;
+            height: 48px;
+        }
     }
     &__title{
         font-weight: $font-weight-bold;

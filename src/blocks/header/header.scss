@@ -1,5 +1,5 @@
 .header{
-    padding: map-get($map: $spacers, $key: 2) 0 map-get($map: $spacers, $key: 4);
+    padding: map-get($map: $spacers, $key: 2) 0;
     background: $black;
     color: $white;
     
@@ -33,9 +33,11 @@
             padding-left: map-get($map: $spacers, $key: 1);
             font-size: map-get($map: $font-size, $key: xs);
             color: $white;
+            text-decoration: none;
             filter: opacity(.75);
 
             &:hover, &:focus{
+                text-decoration: none;
                 color: $yellow;
                 filter: opacity(1);
                 text-decoration: none;

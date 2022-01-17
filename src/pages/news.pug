@@ -1,0 +1,78 @@
+extends ../blocks/main.pug
+
+block variables
+    - var pageTitle = "Новость"
+    link(rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css")
+block content
+    section.container.pt-1.pb-4
+        .breadcrumbs
+            .breadcrumbs__item
+                a.breadcrumbs__link(href="/" title="Главная") Главная
+            .breadcrumbs__item
+                a.breadcrumbs__link(href="/category-news.html" title="Новости") Новости
+            .breadcrumbs__item.breadcrumbs__item_active Новость
+        .content.mt-3
+            .row 
+                .col-8.col-lg-12.mb-lg-1
+                    h1.h3.content__title Министерство труда опубликовало более 20 новых межотраслевых правил по охране труда
+                    p.lead Минтруд опубликовал на страницах Федерального портала проектов нормативных актов перечень из 23 новых правил по охране труда
+                    p В соответствии с положениями подпункта «б» п.3 перечня поручений президента № Пр-294 от 26 февраля 2019 года требуется разработка и введение в действие новых межотраслевых правил по охране труда, которые содержат актуализированные требования, разработанные с учетом рискориентированного подхода и современного уровня технологического развития в соответствующих сферах
+                    p.blockquote В соответствии с положениями подпункта «б» п.3 перечня поручений президента № Пр-294 от 26 февраля 2019 года требуется разработка и введение в действие новых межотраслевых правил по охране труда, которые содержат актуализированные требования, разработанные с учетом рискориентированного подхода и современного уровня технологического развития в соответствующих сферах
+                    p В соответствии с положениями подпункта «б» п.3 перечня поручений президента № Пр-294 от 26 февраля 2019 года требуется разработка и введение в действие новых межотраслевых правил по охране труда, которые содержат актуализированные требования, разработанные с учетом рискориентированного подхода и современного уровня технологического развития в соответствующих сферах
+                    p В соответствии с положениями подпункта «б» п.3 перечня поручений президента № Пр-294 от 26 февраля 2019 года требуется разработка и введение в действие новых межотраслевых правил по охране труда, которые содержат актуализированные требования, разработанные с учетом рискориентированного подхода и современного уровня технологического развития в соответствующих сферах
+                .col-4.col-lg-12
+                    .sidebar
+                        .sidebar__title Недавно опубликованное
+                        .row
+                            .col-12.col-lg-6.col-sm-12.mt-1
+                                a.sidebar__item(href="#") 
+                                    .sidebar__item-title Приглашение на работу по направлению продаж
+                                    .sidebar__intro 08.12.2021
+                            .col-12.col-lg-6.col-sm-12.mt-1
+                                a.sidebar__item(href="#") 
+                                    .sidebar__item-title Приглашение на работу по направлению продаж
+                                    .sidebar__intro 08.12.2021
+                            .col-12.col-lg-6.col-sm-12.mt-1
+                                a.sidebar__item(href="#") 
+                                    .sidebar__item-title Приглашение на работу по направлению продаж
+                                    .sidebar__intro 08.12.2021
+                            .col-12.col-lg-6.col-sm-12.mt-1
+                                a.sidebar__item(href="#") 
+                                    .sidebar__item-title Приглашение на работу по направлению продаж
+                                    .sidebar__intro 08.12.2021
+        .content.content_secondary.mt-4 
+            .row 
+                .col-4
+                    p.content__title.h3 Остались вопросы? Задайте их нам
+                    p Специалисты учебного центра оперативно ответят на любые ваши вопросы
+                .col-8
+                    .content__cta-form 
+                        form.form.form_cta(action="")
+                            input.input.input_full(type="text" placeholder="Ваш вопрос")
+                            .form_cta__row
+                                input.input.input_full(data-input="phone" type="tel" placeholder="Мобильный телефон *") 
+                                button.btn.btn_action(type="submit") Отправить заявку
+                            .form__agree Нажимая на кнопку, я соглашаюсь на обработку персональных данных и с правилами пользования сайтом
+        .content.mt-3
+            p.h5.text-uppercase.content__title Аккредитованный учебный Центр
+            .row
+                .col-sm-12.col-md-6.col-lg-6.col-4.mb-1
+                    .advantage.advantage_service
+                        .advantage__icon.advantage__icon_service(style="background-image: url('../icon/demo-icon.png');")
+                        .advantage__content
+                            //- .advantage__title 
+                            .advantage__intro Аутсорсинг по охране труда
+                .col-sm-12.col-md-6.col-lg-6.col-4.mb-1
+                    .advantage.advantage_service
+                        .advantage__icon.advantage__icon_service(style="background-image: url('../icon/demo-icon.png');")
+                        .advantage__content
+                            //- .advantage__title  
+                            .advantage__intro Служба охраны труда
+                .col-sm-12.col-md-6.col-lg-6.col-4.mb-1
+                    .advantage.advantage_service
+                        .advantage__icon.advantage__icon_service(style="background-image: url('../icon/demo-icon.png');")
+                        .advantage__content
+                            //- .advantage__title 
+                            .advantage__intro Собственная биржа труда
+            p.text-small.text-grey Постановление Правительства Ленинградской области от 14.05.2019 № 208 "О внесении изменений в постановление Правительства Ленинградской области от 27 мая 2014 года N 192 "О Комите Постановление Правительства Ленинградской области от 14.05.2019 № 208 "О внесении изменений в постановление Правительства Ленинградской области от 27 мая 2014
+        

@@ -1,0 +1,45 @@
+extends ../blocks/main.pug
+
+block variables
+    - var pageTitle = "Текстовая"
+    link(rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css")
+block content
+    section.container.pt-4.pb-4
+        .breadcrumbs
+            .breadcrumbs__item
+                a.breadcrumbs__link(href="/" title="Главная") Главная
+            .breadcrumbs__item.breadcrumbs__item_active Текстовая страница
+        .content
+            h1.content__title Текстовая страница
+            p.lead Страница удалена или не существует. Вы можете перейти в нужный раздел, воспользовавшись меню вернитесь на главную страницу сайта или ознакомиться со всеми курсами учебного центра
+            .mt-1
+                .toggle
+                    .toggle__title Заголовок блока
+                    .toggle__content 
+                        p Страница удалена или не существует. Вы можете перейти в нужный раздел, воспользовавшись меню вернитесь на главную страницу сайта или ознакомиться со всеми курсами учебного центра
+        .content.content_secondary.mt-3
+            .row 
+                .col-4
+                    p.content__title.h3 Оставьте заявку
+                    p Специалисты учебного центра оперативно ответят на любые ваши вопросы
+                .col-8
+                    .content__cta-form 
+                        form.form.form_cta(action="")
+                            .form_cta__row
+                                input.input.input_full(data-input="phone" type="tel" placeholder="Мобильный телефон *") 
+                                button.btn.btn_action(type="submit") Отправить заявку
+                            .form__agree Нажимая на кнопку, я соглашаюсь на обработку персональных данных и с правилами пользования сайтом
+        .content.mt-3
+            p.h2.content__title Популярные направления 
+            .row 
+                .col-4.col-lg-6.col-md-12.mt-1 
+                    a.product(href="programm.html" style="background-image: url('../img/demo.png');")
+                        .product__title Обучение на оператора
+                .col-4.col-lg-6.col-md-12.mt-1 
+                    a.product(href="programm.html" style="background-image: url('../img/demo.png');")
+                        .product__title Обучение работам на высоте
+                .col-4.col-lg-6.col-md-12.mt-1 
+                    a.product(href="programm.html" style="background-image: url('../img/demo.png');")
+                        .product__title Курс обучения по охране труда для охранников
+block footer
+    script(src="https://unpkg.com/swiper@7/swiper-bundle.min.js")

@@ -83,6 +83,12 @@
             letter-spacing: 0.08em;
         }
     }
+    &__sep{
+        margin: $spacer 0;
+        width: 100%;
+        height: 1px;
+        background-color: $grey;
+    }
     &__link{
         &-item{
             display: grid;

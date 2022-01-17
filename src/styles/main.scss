@@ -22,23 +22,41 @@
 @import "../items/slider/slider_sales";
 
 @import "../items/advantage/advantage";
+@import "../items/advantage/advantage_service";
 
 @import "../items/item/item";
 @import "../items/item/item_link";
 @import "../items/item/item_programm";
 @import "../items/item/item_sale";
 @import "../items/item/item_news";
+@import "../items/item/item_clickable-img";
 
+@import "../items/check-list/check-list";
 @import "../items/steps/steps";
+@import "../items/product/product";
 
 @import "../items/review/review";
+@import "../items/review/review_search";
+@import "../items/review/review_google";
+@import "../items/review/review_yandex";
 
 @import "../items/toggle/toggle";
+@import "../items/contact/contact";
+@import "../items/news/news";
+@import "../items/learning/learning";
 
-@import "../blocks/header/header.scss";
-@import "../blocks/footer/footer.scss";
+@import "../blocks/header/header";
+@import "../blocks/header/header_index";
+@import "../blocks/footer/footer";
+
+@import "../blocks/breadcrumbs/breadcrumbs";
+@import "../blocks/sidebar/sidebar";
+@import "../blocks/pagination/pagination";
 
 @import "../blocks/content/content";
 @import "../blocks/content/content_slider";
 @import "../blocks/content/content_secondary";
-@import "../blocks/content/content_sales";
+@import "../blocks/content/content_action";
+
+@import "../blocks/map/map";
+@import "../blocks/docs/docs";

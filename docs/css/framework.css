@@ -1891,6 +1891,24 @@ template {
   }
 }
 
+.grid {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media all and (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media all and (max-width: 576px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 html, body {
   font-size: 14px;
   font-weight: 400;
@@ -2014,6 +2032,10 @@ table td {
   color: #1A1A1A;
 }
 
+.text-secondary {
+  color: #9E877F;
+}
+
 .p-relative {
   position: relative;
 }
@@ -2102,6 +2124,13 @@ hr, .hr {
   height: 1px;
   height: 1px;
   border-bottom: 1px solid #EBEBEB;
+}
+
+blockquote, .blockquote {
+  padding: 24px;
+  background-color: #FAF9FB;
+  border-left: 4px solid #C4872F;
+  border-radius: 4px;
 }
 
 @media all and (max-width: 1440px) {
@@ -2274,11 +2303,11 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:la
 }
 
 .h1, h1 {
-  font-size: 48px;
+  font-size: 40px;
 }
 
 .h2, h2 {
-  font-size: 40px;
+  font-size: 36px;
 }
 
 .h3, h3 {
@@ -2299,7 +2328,7 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:la
 
 @media all and (max-width: 1440px) {
   .h1, h1 {
-    font-size: 40px;
+    font-size: 36px;
   }
   .h2, h2 {
     font-size: 32px;

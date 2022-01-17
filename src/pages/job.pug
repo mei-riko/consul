@@ -1,0 +1,61 @@
+extends ../blocks/main.pug
+
+block variables
+    - var pageTitle = "Вакансии"
+    link(rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css")
+block content
+    section.container.pt-5.pb-5
+        .breadcrumbs
+            .breadcrumbs__item
+                a.breadcrumbs__link(href="/" title="Главная") Главная
+                a.breadcrumbs__link(href="/news.html" title="Новости") Новости
+            .breadcrumbs__item.breadcrumbs__item_active Вакансии
+        .content
+            .row.justify-content-between.align-items-center.mb-2
+                .col-6.col-md-12
+                    h1.h3.content__title Приглашение на работу
+                    p Компания Консул приглашает на работу молодых и активных людей для успешного построения карьеры в различных областях деятельности нашей компании. Если вы считаете себя целеустремленным и не боитесь больших объемов работы, то мы будем рады видеть вас частью нашей команды
+                    p Мы готовы приложить все усилия для того, чтобы помочь вам стать в нашей фирме успешными в финансовом и карьерном плане!
+                .col-5.col-xl-5.col-md-12.mt-md-2
+                    a.item_clickable-img(href="javascript:;" data-fancybox data-src="https://youtu.be/06REXqNm_KM")
+                        img.item_clickable-img__inside.img-fluid(src="../img/demo.png")
+        .content.content_secondary.mt-4
+            p.h3.content__title О компании
+            p Компания Консул является активно растущей развивающейся организацией в сфере охраны труда и обязательного обучения в направлениях, регламентированных законодательством Российской Федерации. При этом мы реализуем новые области, такие как лицензирование, сертифицирование в различных сферах. Мы ведем свою деятельность на всей территории Российской Федерации, придерживаемся политики взращивания высококлассных специалистов и руководителей внутри компании за счет собственных ресурсов, это дает нам возможность быть одной из самых экспертных организаций в нашей сфере на территории РФ.
+            p Свыше 80% руководителей в компании Консул являются воспитанниками, которые поднялись по карьерной лестнице нуля. Мы готовы приложить все усилия для того, чтобы помочь вам стать в нашей фирме успешными!
+        .content.mt-4
+            .row
+                .col-6.col-sm-12.mb-1
+                    p.h4.content__title Развитие в продажах
+                    ul
+                        li возможность зарабатывать более 200 000 рублей в месяц
+                        li карьерный рост до директора филиала
+                        li эффективная система подготовки сотрудников и руководителей
+                .col-6.col-sm-12.mb-1
+                    p.h4.content__title Развитие в сфере IT и рекламы
+                    ul
+                        li возможность зарабатывать более 200 000 рублей в месяц
+                        li карьерный рост до директора филиала
+                        li эффективная система подготовки сотрудников и руководителей
+        .content.content_secondary.mt-4
+            p.h4.content__title Мероприятия и дни открытых дверей
+            .row
+                .mt-1.col-4.col-lg-6.col-md-6.col-sm-12.col-stretch
+                    +item_link("День открытых дверей в направлении продаж", "25.09.2021", "#")
+                .mt-1.col-4.col-lg-6.col-md-6.col-sm-12.col-stretch
+                    +item_link("Вебинар по настройке таргета", "02.09.2021", "#")
+        .content.content_action.mt-4
+            .row 
+                .col-4
+                    p.content__title.h3 Хотите узнать больше о работе?
+                    p Специалисты учебного центра готовы оперативно ответить на все ваши вопросы
+                .col-8
+                    .content__cta-form 
+                        form.form.form_cta(action="")
+                            input.input.input_full(type="text" placeholder="Ваш вопрос")
+                            .form_cta__row
+                                input.input.input_full(data-input="email" type="email" placeholder="Электронный адрес *") 
+                                button.btn.btn_action(type="submit") Задать вопрос
+                            .form__agree Нажимая на кнопку, я соглашаюсь на обработку персональных данных и с правилами пользования сайтом
+block footer
+    script(src="https://unpkg.com/swiper@7/swiper-bundle.min.js")

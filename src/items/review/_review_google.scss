@@ -1,0 +1,56 @@
+.review_google {
+    padding: 20px 20px 32px;
+    border-radius: 8px;
+    border: 1px solid $border-color;
+    background-color: $white;
+
+    &__title {
+        color: #333;
+        font-size: 20px;
+        font-weight: $font-weight-bold;
+        margin-bottom: 0;
+        line-height: 1.2;
+    }
+      
+    &__subtitle {
+        color: #999;
+        font-size: 13px;
+        margin-bottom: 0;
+    }
+      
+    &__grade {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 1;
+        margin-right: 11px;
+        color: #70757A;
+        white-space: nowrap;
+    }
+      
+    &__count {
+        color: #878787;
+        white-space: nowrap;
+        display: inline;
+        font-size: 15px;
+        margin-left: 11px;
+    }
+      
+    &__stars {
+        display: inline-block;
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAWCAYAAAA1vze2AAAAqUlEQVR4AWLwySwkGv/YzgworgwwAIphGHqJXWgX6nl6q55o/GHxCX4bUx9hMK9JYwucFSmAubW2ZifED8Q7IXEgcmRqVNDsgBhBrAMSBJEiqwAGAaBRhiDvBk1A3mkRyb2CXSYLlmWFnbArffoMIrjS6qy3Sm/Z/068CPEbyKpKhfCDyA0yNE95MKtRGe9LiSz9O3hKclv6Y76ictQzqbmjyhIkyVi+8wCta5MKDP5AeAAAAABJRU5ErkJggg==);
+        background-size: 25px 22px;
+        height: 22px;
+        top: 1px;
+        width: 125px;
+    }
+      
+    &__item-stars {
+        display: inline-block;
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAWCAYAAAA1vze2AAAAqUlEQVR4AWLwySwkGv/YzgworgwwAIphGHqJXWgX6nl6q55o/GHxCX4bUx9hMK9JYwucFSmAubW2ZifED8Q7IXEgcmRqVNDsgBhBrAMSBJEiqwAGAaBRhiDvBk1A3mkRyb2CXSYLlmWFnbArffoMIrjS6qy3Sm/Z/068CPEbyKpKhfCDyA0yNE95MKtRGe9LiSz9O3hKclv6Y76ictQzqbmjyhIkyVi+8wCta5MKDP5AeAAAAABJRU5ErkJggg==);
+        background-size: 14px 13px;
+        height: 13px;
+        top: 1px;
+        width: 70px;
+        margin-right: 7px;
+    }
+}

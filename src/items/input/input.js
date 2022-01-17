@@ -33,7 +33,6 @@ function checkInputValue( $input ){
 			break;
 	};
 }
-
 export let unitMaskPhone = () => {
     $('input[data-input="phone"]').inputmask({
         mask: '+7 (999) 999 99 99',

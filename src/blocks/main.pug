@@ -1,6 +1,9 @@
 - var tel = {'item':"8 800 600 44 22",'link':"tel:88006004422"}
 - var email = {'item':"demo@demo.ru",'link':"mailto:demo@demo.ru"}
 block variables
+mixin item_link(title, subtitle, link)
+    a.item.item_link(href=link)=title
+        .item_link__intro=subtitle
 html(lang="ru")
     head
         meta(charset="UTF-8")

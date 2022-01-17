@@ -1,0 +1,12 @@
+.item_clickable-img{
+    border-radius: $border-radius;
+    overflow: hidden;
+
+    &__inside{
+        transition: $transition-base;
+
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}
