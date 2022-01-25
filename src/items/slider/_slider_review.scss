@@ -27,3 +27,15 @@
         margin-bottom: map-get($map: $spacers, $key: 3);
     }
 }
+
+// < 375px
+@media all and (max-width: map-get($grid-breakpoints, 'xs')){
+    .slider_review{
+        &.swiper-initialized{
+            margin-top: -(54px);
+        }
+        &__arrows{
+            margin-bottom: map-get($map: $spacers, $key: 2);
+        }
+    }
+}

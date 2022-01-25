@@ -336,6 +336,7 @@ template {
   padding-right: 24px;
   margin-right: auto;
   margin-left: auto;
+  overflow-x: hidden;
 }
 
 .row {
@@ -2021,7 +2022,7 @@ table td {
 }
 
 .bg-light-grey {
-  background-color: #FAF9FB;
+  background-color: #F7F7F5;
 }
 
 .text-white {
@@ -2034,6 +2035,10 @@ table td {
 
 .text-secondary {
   color: #9E877F;
+}
+
+.hidden {
+  overflow: hidden;
 }
 
 .p-relative {
@@ -2128,7 +2133,7 @@ hr, .hr {
 
 blockquote, .blockquote {
   padding: 24px;
-  background-color: #FAF9FB;
+  background-color: #F7F7F5;
   border-left: 4px solid #C4872F;
   border-radius: 4px;
 }

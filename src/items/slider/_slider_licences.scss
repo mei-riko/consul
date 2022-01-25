@@ -1,0 +1,6 @@
+.slider_licences{
+    &.swiper-initialized{
+        padding-right: map-get($map: $spacers, $key: 2);
+        overflow: visible;
+    }
+}

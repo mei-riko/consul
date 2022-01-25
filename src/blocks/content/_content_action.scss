@@ -4,3 +4,10 @@
     padding: map-get($map: $spacers, $key: 2);
     border-radius: $border-radius;
 }
+
+// < 375px
+@media all and (max-width: map-get($grid-breakpoints, 'xs')){
+    .content_action{
+        padding: map-get($map: $spacers, $key: 1);
+    }
+}

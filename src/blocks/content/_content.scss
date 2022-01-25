@@ -8,12 +8,14 @@
         column-gap: $spacer;
     }
     &__slider{
-        display: grid;
-        grid-gap: $spacer;
-        grid-template-columns: repeat(3, 1fr);
+        &:not(.swiper-wrapper){
+            display: grid;
+            grid-gap: $spacer;
+            grid-template-columns: repeat(3, 1fr);
 
-        max-width: 720px;
-        margin-left: auto;
+            max-width: 720px;
+            margin-left: auto;
+        }
 
         &-item{
             position: relative;
@@ -45,4 +47,44 @@
     &__cta-form{
         padding-top: map-get($map: $spacers, $key: 3);
     }
+}
+
+// < 1440px
+@media all and (max-width: map-get($grid-breakpoints, 'xl')){
+}
+// < 1024px
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .content{
+        &__slider{
+            &:not(.swiper-wrapper){
+                margin-left: 0;
+            }
+        }
+    }
+}
+// < 768px
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .content{
+        &__slider{
+            &:not(.swiper-wrapper){
+                grid-gap: $spacer/2;
+            }
+        }
+    }
+}
+// < 576px
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .content{
+        &__slider{
+            &-title{
+                width: calc(100% - 48px);
+            }
+        }
+        &__inform{
+            column-count: unset;
+        }
+    }
+}
+// < 375px
+@media all and (max-width: map-get($grid-breakpoints, 'xs')){
 }

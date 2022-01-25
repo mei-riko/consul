@@ -2,6 +2,7 @@ extends ../blocks/main.pug
 
 block variables
     - var pageTitle = "Index Page"
+    - var headerClass = "header_index"
     link(rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css")
 block content
     section.container
@@ -25,16 +26,16 @@ block content
                             img.img-fluid(src="../img/demo.png")
                         .slider__content
                             .slider__subtitle.label Приведи друга
-                            p.h3.slider__title Получи скидку 10% на следующий заказ
+                            p.h3.slider__title.slider_sales__title Получи скидку 10% на следующий заказ
                             .slider__intro Ut consectetur suscipit scelerisque porta elementum risus porttitor. Vulputate bibendum sagittis eu molestie nunc.
                     .slider__slide.slider_sales__item 
                         .slider__image
                             img.img-fluid(src="../img/demo.png")
                         .slider__content
                             .slider__subtitle.label Приведи друга
-                            p.h3.slider__title Получи скидку 30% на следующий заказ
+                            p.h3.slider__title.slider_sales__title Получи скидку 30% на следующий заказ
                             .slider__intro Ut consectetur suscipit scelerisque porta elementum risus porttitor. Vulputate bibendum sagittis eu molestie nunc.
-        .content.pt-5.pb-5.mt-1
+        .content.pt-5.pb-5.mt-1.pt-sm-3.pb-sm-2.mt-sm-0
             h1.h4.content__title Учебный центр в Санкт-Петербурге «Консул»
             p.content__inform Центр обучения «Консул» приветствует вас! Что для вас важно при выборе партнёра по обучению? Надёжность? Скорость? Легитимность? Цена? Персональный подход? Всё это вы найдёте в нашей компании!
                 | Учебный центр в Санкт-Петербурге «Консул» – это команда профессионалов, которая решит все задачи в области охраны труда, разрешительной документации, а также лицензирования. 
@@ -89,52 +90,53 @@ block content
                         .advantage__content
                             .advantage__title Консультации
                             .advantage__intro Специалист учебного центра помогут разобраться в сложных рабочих ситуациях.
-        .content.pt-5.pb-5.mt-1
+        .content.pt-5.pb-5.mt-1.pt-sm-3.pb-sm-2.mt-sm-0
             .row.align-items-center
-                .col-md-12.col-lg-4.col-4
+                .col-lg-12.col-xl-5.col-4.mb-lg-2
                     p.h2.content__title Лицензии и&nbsp;аккредитации
                     p Северный Путь является аккредитованным учебным центром и&nbsp;имеет всю&nbsp;необходимую 
                         | документацию для&nbsp;ведения образовательной деятельности. Здесь вы можете ознакомиться 
                         | с&nbsp;лицензиями и&nbsp;разрешениями компании.
                     a.text-bold(href="info.html") Сведения об образовательной организации
-                .col-md-12.col-lg-8.col-8
-                    .content__slider
-                        a.content__slider-item(href="../img/license-demo.png" data-fancybox)
-                            img.img-fluid(src="../img/license-demo.png")
-                            .content__slider-title Лицензия на осуществление образовательной деятельности
-                        a.content__slider-item(href="../img/license-demo.png" data-fancybox)
-                            img.img-fluid(src="../img/license-demo.png")
-                            .content__slider-title Приложение лицензии
-                        a.content__slider-item(href="../img/license-demo.png" data-fancybox)
-                            img.img-fluid(src="../img/license-demo.png")
-                            .content__slider-title Аккредитация организации
+                .col-lg-12.col-xl-7.col-8.hidden
+                    .slider.slider_licences
+                        .content__slider.slider__wrapper
+                            a.content__slider-item.slider__slide(href="../img/license-demo.png" data-fancybox)
+                                img.img-fluid(src="../img/license-demo.png")
+                                .content__slider-title Лицензия на осуществление образовательной деятельности
+                            a.content__slider-item.slider__slide(href="../img/license-demo.png" data-fancybox)
+                                img.img-fluid(src="../img/license-demo.png")
+                                .content__slider-title Приложение лицензии
+                            a.content__slider-item.slider__slide(href="../img/license-demo.png" data-fancybox)
+                                img.img-fluid(src="../img/license-demo.png")
+                                .content__slider-title Аккредитация организации
         .content.content_secondary.mt-1
-            p.h4.content__title Услуги учебного центра
+            p.h4.content__title.mb-sm-0 Услуги учебного центра
             .row
-                .mt-1.col-sm-12.col-md-6.col-lg-6.col-4
+                .mt-1.col-stretch.col-sm-12.col-md-6.col-lg-6.col-4
                     +item_link("Аутсорсинг по охране труда", "8 программ", "#")
-                .mt-1.col-sm-12.col-md-6.col-lg-6.col-4
+                .mt-1.col-stretch.col-sm-12.col-md-6.col-lg-6.col-4
                     +item_link("Расследование несчастных случаев", "8 программ", "#")
-                .mt-1.col-sm-12.col-md-6.col-lg-6.col-4
+                .mt-1.col-stretch.col-sm-12.col-md-6.col-lg-6.col-4
                     +item_link("Лицензирование и сертификация", "8 программ", "#")
-                .mt-1.col-sm-12.col-md-6.col-lg-6.col-4
+                .mt-1.col-stretch.col-sm-12.col-md-6.col-lg-6.col-4
                     +item_link("Судебное представительство и правовой анализ документов", "8 программ", "#")
-                .mt-1.col-sm-12.col-md-6.col-lg-6.col-4
+                .mt-1.col-stretch.col-sm-12.col-md-6.col-lg-6.col-4
                     +item_link("Помощь при вступлении в СРО  и подготовке специалистов", "8 программ", "#")
-                .mt-1.col-sm-12.col-md-6.col-lg-6.col-4
+                .mt-1.col-stretch.col-sm-12.col-md-6.col-lg-6.col-4
                     +item_link("Разработка документов по охране труда (СУОТ)", "8 программ", "#")
-                .mt-1.col-sm-12.col-md-6.col-lg-6.col-4
+                .mt-1.col-stretch.col-sm-12.col-md-6.col-lg-6.col-4
                     +item_link("Специальная оценка условий труда (СОУТ)", "8 программ", "#")
-                .mt-1.col-sm-12.col-md-6.col-lg-6.col-4
+                .mt-1.col-stretch.col-sm-12.col-md-6.col-lg-6.col-4
                     +item_link("Помощь при проверках надзорных органов", "8 программ", "#")
-        .content.pt-5.pb-5.mt-1
+        .content.pt-5.pb-5.mt-1.pt-sm-3.pb-sm-2.mt-sm-0
             .row
-                .col-8
+                .col-8.col-sm-12.col-md-6
                     p.h3.content__title Программы обучения
-                .col-4.text-right 
+                .col-4.text-right.d-sm-none.col-md-6
                     a.btn.btn_action.btn_small(href="#") Все образовательные программы
-            .row.mt-1
-                .col-4.mt-1.col-stretch
+            .row.mt-1.mt-sm-0
+                .col-4.mt-1.col-stretch.col-sm-12.col-lg-6
                     .item.item_programm
                         .item_programm__inform(href="#")
                         a.item_programm__title(href="#") Курсы первой помощи для руководителей и&nbsp;сотрудников
@@ -149,7 +151,7 @@ block content
                                 a.item_programm__link-item(href="#") Строительство
                                 a.item_programm__link-item(href="#") Проектирование
                                 .item_programm__link-item(href="#") Инженерные изыскания
-                .col-4.mt-1.col-stretch
+                .col-4.mt-1.col-stretch.col-sm-12.col-lg-6
                     .item.item_programm
                         .item_programm__inform(href="#")
                         a.item_programm__title(href="#") Целевое обучение
@@ -164,7 +166,7 @@ block content
                                 .item_programm__link-item(href="#") Хранение, транспортирование и использование баллонов, предназначенных для сжатых, сжиженных и растворённых под давлением газов
                                 .item_programm__link-item(href="#") Монтаж сборно-разборных металлических конструкций
                                 .item_programm__link-item(href="#") Оператор, управляющий грузоподъёмными машинами с пола или со станционного пульта
-                .col-4.mt-1.col-stretch
+                .col-4.mt-1.col-stretch.col-sm-12.col-lg-6
                     .item.item_programm
                         .item_programm__inform(href="#")
                         a.item_programm__title(href="#") Курсы первой помощи для руководителей и&nbsp;сотрудников
@@ -179,29 +181,31 @@ block content
                                 .item_programm__link-item(href="#") Строительство
                                 .item_programm__link-item(href="#") Проектирование
                                 .item_programm__link-item(href="#") Инженерные изыскания
-    aside.bg-light-grey.pt-4.pb-4
+            .d-none.d-sm-block.mt-sm-1 
+                a.btn.btn_action.btn_small(href="#") Все образовательные программы
+    aside.bg-light-grey.pt-4.pb-4.pt-sm-3.pb-sm-3
         .container 
             .row 
-                .col-8
+                .col-8.col-lg-12
                     .content.content_action
-                        p.h4.content__title Акции и спецпредложения
+                        p.h4.content__title.mb-sm-1 Акции и спецпредложения
                         .row 
-                            .col-6.mb-1
+                            .col-6.mb-1.col-sm-12
                                 .item.item_sale 
-                                    img.img-fluid.item_sale__icon(src="../icon/sale.png")
+                                    img.img-fluid.item_sale__icon(src="../icon/sale-invite.png")
                                     p.item_sale__title Приведи друга
                                     p.item_sale__intro Скидка 10% на следующие заказы
-                            .col-6.mb-1
+                            .col-6.mb-1.col-sm-12
                                 .item.item_sale 
-                                    img.img-fluid.item_sale__icon(src="../icon/gift.png")
+                                    img.img-fluid.item_sale__icon(src="../icon/sale-gift-delivery.png")
                                     p.item_sale__title Бесплатная доставка
                                     p.item_sale__intro Доставка документов по СПб
-                            .col-6
+                            .col-6.col-sm-12
                                 .item.item_sale 
-                                    img.img-fluid.item_sale__icon(src="../icon/sale.png")
+                                    img.img-fluid.item_sale__icon(src="../icon/sale-docs.png")
                                     p.item_sale__title Договор на год
                                     p.item_sale__intro -10% при заключении договора на год
-                .col-4.col-stretch
+                .col-4.col-stretch.col-lg-12.mt-lg-2
                     .steps
                         .label.label_action Как устроена работа УЦ?
                         .steps__list
@@ -215,10 +219,10 @@ block content
                                 span.steps__list-num 3
                                 span Получите документы и обучающие материалы не выходя из офиса
                         .steps__footer Orci, morbi arcu morbi libero interdum consectetur. Malesuada morbi facilisi suscipit volutpat. Eget dolor in.
-    aside.pt-4.pb-4
+    aside.pt-4.pb-4.pt-sm-3.pb-sm-3
         .container 
             .row 
-                .col-4 
+                .col-4.col-md-12.col-lg-6
                     p.h4.content__title.mb-2 Новости учебного центра
                     a.item.item_news(href="text.html")
                         .item_news__date 30.08.2021
@@ -232,7 +236,7 @@ block content
                     a.item.item_news(href="text.html")
                         .item_news__date 30.08.2021
                         .item_news__title Приглашение на работу
-                .col-8
+                .col-8.col-md-12.col-lg-6.mt-md-2
                     p.h4.content__title.mb-2 Отзывы клиентов центра
                     .slider.slider_review
                         .slider_review__arrows
@@ -265,12 +269,12 @@ block content
                                         .review__img(style="background-image:url('../img/logo.png');")
                                         .review__name ООО Компания | 24 апреля 2021
                                     .review__content Ac lectus commodo odio volutpat. Imperdiet vel volutpat sed enim. Mattis sem tortor nam amet, feugiat quis enim. At elit sed bibendum enim varius risus.
-            .content.content_secondary.mt-4 
+            .content.content_secondary.mt-4.mt-sm-3
                 .row 
-                    .col-4
+                    .col-4.col-xl-5.col-lg-12
                         p.content__title.h3 Остались вопросы? Задайте их нам
                         p Специалисты учебного центра оперативно ответят на любые ваши вопросы
-                    .col-8
+                    .col-8.col-xl-7.col-lg-12
                         .content__cta-form 
                             form.form.form_cta(action="")
                                 input.input.input_full(type="text" placeholder="Ваш вопрос")
@@ -278,7 +282,7 @@ block content
                                     input.input.input_full(data-input="phone" type="tel" placeholder="Мобильный телефон *") 
                                     button.btn.btn_action(type="submit") Отправить заявку
                                 .form__agree Нажимая на кнопку, я соглашаюсь на обработку персональных данных и с правилами пользования сайтом
-    section.container.pb-5
+    section.container.pb-5.pb-sm-3
         .content
             p.h4.content__title Учебный центр в Санкт-Петербурге «Консул»
             .content__toggle

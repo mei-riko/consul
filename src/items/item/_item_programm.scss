@@ -34,7 +34,7 @@
         text-decoration: none;
         color: $brown;
 
-        margin-bottom: $spacer;
+        // margin-bottom: $spacer;
 
         max-width: calc(100% - 16px);
 
@@ -111,5 +111,18 @@
                 margin-bottom: 0;
             }
         }
+    }
+}
+
+// < 768px
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .item_programm{
+        grid-template-rows: 3.6em auto;
+    }
+}
+// < 576px
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .item_programm{
+        grid-template-rows: 2.4em auto;
     }
 }

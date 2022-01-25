@@ -2,6 +2,7 @@
 .item_link{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     
     text-decoration: none;
     color: $brown;
@@ -17,6 +18,8 @@
         font-size: map-get($map: $font-size, $key: xs);
         color: $brown-light;
         margin-top: $spacer-gutter/2;
+
+        flex: 0 0 100%;
     }
 
     &:hover{
@@ -40,5 +43,13 @@
         background: url('../icon/mdi-light_arrow-right.svg') no-repeat center / contain;
 
         transition: $transition-base;
+    }
+}
+
+// < 375px
+@media all and (max-width: map-get($grid-breakpoints, 'xs')){
+    .item_link{
+        padding: $spacer/2;
+        padding-right: map-get($map: $spacers, $key: 3);
     }
 }

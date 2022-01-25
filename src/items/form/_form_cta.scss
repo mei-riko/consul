@@ -17,7 +17,15 @@
 }
 // < 1024px
 @media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .form_cta{
+        margin-left: 0;
+    }
 }
 // < 375px
 @media all and (max-width: map-get($grid-breakpoints, 'xs')){
+    .form_cta{
+        &__row{
+            grid-template-columns: 1fr;
+        }
+    }
 }

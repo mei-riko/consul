@@ -13,7 +13,7 @@
   </head>
   <body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <header class="header">
+    <header class="header header_index">
       <div class="container">
         <div class="header__grid"><a class="header__link" href="index.html"><img class="header__logo" src="./icon/logo.svg"/></a>
           <div class="header__nav-additional">
@@ -70,7 +70,7 @@
               <div class="slider__image"><img class="img-fluid" src="../img/demo.png"/></div>
               <div class="slider__content">
                 <div class="slider__subtitle label">Приведи друга</div>
-                <p class="h3 slider__title">Получи скидку 10% на следующий заказ</p>
+                <p class="h3 slider__title slider_sales__title">Получи скидку 10% на следующий заказ</p>
                 <div class="slider__intro">Ut consectetur suscipit scelerisque porta elementum risus porttitor. Vulputate bibendum sagittis eu molestie nunc.</div>
               </div>
             </div>
@@ -78,14 +78,14 @@
               <div class="slider__image"><img class="img-fluid" src="../img/demo.png"/></div>
               <div class="slider__content">
                 <div class="slider__subtitle label">Приведи друга</div>
-                <p class="h3 slider__title">Получи скидку 30% на следующий заказ</p>
+                <p class="h3 slider__title slider_sales__title">Получи скидку 30% на следующий заказ</p>
                 <div class="slider__intro">Ut consectetur suscipit scelerisque porta elementum risus porttitor. Vulputate bibendum sagittis eu molestie nunc.</div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="content pt-5 pb-5 mt-1">
+      <div class="content pt-5 pb-5 mt-1 pt-sm-3 pb-sm-2 mt-sm-0">
         <h1 class="h4 content__title">Учебный центр в Санкт-Петербурге «Консул»</h1>
         <p class="content__inform">
           Центр обучения «Консул» приветствует вас! Что для вас важно при выборе партнёра по обучению? Надёжность? Скорость? Легитимность? Цена? Персональный подход? Всё это вы найдёте в нашей компании!Учебный центр в Санкт-Петербурге «Консул» – это команда профессионалов, которая решит все задачи в области охраны труда, разрешительной документации, а также лицензирования. 
@@ -168,61 +168,63 @@
           </div>
         </div>
       </div>
-      <div class="content pt-5 pb-5 mt-1">
+      <div class="content pt-5 pb-5 mt-1 pt-sm-3 pb-sm-2 mt-sm-0">
         <div class="row align-items-center">
-          <div class="col-md-12 col-lg-4 col-4">
+          <div class="col-lg-12 col-xl-5 col-4 mb-lg-2">
             <p class="h2 content__title">Лицензии и&nbsp;аккредитации</p>
             <p>
               Северный Путь является аккредитованным учебным центром и&nbsp;имеет всю&nbsp;необходимую документацию для&nbsp;ведения образовательной деятельности. Здесь вы можете ознакомиться 
               с&nbsp;лицензиями и&nbsp;разрешениями компании.
             </p><a class="text-bold" href="info.html">Сведения об образовательной организации</a>
           </div>
-          <div class="col-md-12 col-lg-8 col-8">
-            <div class="content__slider"><a class="content__slider-item" href="../img/license-demo.png" data-fancybox="data-fancybox"><img class="img-fluid" src="../img/license-demo.png"/>
-                <div class="content__slider-title">Лицензия на осуществление образовательной деятельности</div></a><a class="content__slider-item" href="../img/license-demo.png" data-fancybox="data-fancybox"><img class="img-fluid" src="../img/license-demo.png"/>
-                <div class="content__slider-title">Приложение лицензии</div></a><a class="content__slider-item" href="../img/license-demo.png" data-fancybox="data-fancybox"><img class="img-fluid" src="../img/license-demo.png"/>
-                <div class="content__slider-title">Аккредитация организации</div></a></div>
+          <div class="col-lg-12 col-xl-7 col-8 hidden">
+            <div class="slider slider_licences">
+              <div class="content__slider slider__wrapper"><a class="content__slider-item slider__slide" href="../img/license-demo.png" data-fancybox="data-fancybox"><img class="img-fluid" src="../img/license-demo.png"/>
+                  <div class="content__slider-title">Лицензия на осуществление образовательной деятельности</div></a><a class="content__slider-item slider__slide" href="../img/license-demo.png" data-fancybox="data-fancybox"><img class="img-fluid" src="../img/license-demo.png"/>
+                  <div class="content__slider-title">Приложение лицензии</div></a><a class="content__slider-item slider__slide" href="../img/license-demo.png" data-fancybox="data-fancybox"><img class="img-fluid" src="../img/license-demo.png"/>
+                  <div class="content__slider-title">Аккредитация организации</div></a></div>
+            </div>
           </div>
         </div>
       </div>
       <div class="content content_secondary mt-1">
-        <p class="h4 content__title">Услуги учебного центра</p>
+        <p class="h4 content__title mb-sm-0">Услуги учебного центра</p>
         <div class="row">
-          <div class="mt-1 col-sm-12 col-md-6 col-lg-6 col-4"><a class="item item_link" href="#">Аутсорсинг по охране труда
+          <div class="mt-1 col-stretch col-sm-12 col-md-6 col-lg-6 col-4"><a class="item item_link" href="#">Аутсорсинг по охране труда
               <div class="item_link__intro">8 программ</div></a>
           </div>
-          <div class="mt-1 col-sm-12 col-md-6 col-lg-6 col-4"><a class="item item_link" href="#">Расследование несчастных случаев
+          <div class="mt-1 col-stretch col-sm-12 col-md-6 col-lg-6 col-4"><a class="item item_link" href="#">Расследование несчастных случаев
               <div class="item_link__intro">8 программ</div></a>
           </div>
-          <div class="mt-1 col-sm-12 col-md-6 col-lg-6 col-4"><a class="item item_link" href="#">Лицензирование и сертификация
+          <div class="mt-1 col-stretch col-sm-12 col-md-6 col-lg-6 col-4"><a class="item item_link" href="#">Лицензирование и сертификация
               <div class="item_link__intro">8 программ</div></a>
           </div>
-          <div class="mt-1 col-sm-12 col-md-6 col-lg-6 col-4"><a class="item item_link" href="#">Судебное представительство и правовой анализ документов
+          <div class="mt-1 col-stretch col-sm-12 col-md-6 col-lg-6 col-4"><a class="item item_link" href="#">Судебное представительство и правовой анализ документов
               <div class="item_link__intro">8 программ</div></a>
           </div>
-          <div class="mt-1 col-sm-12 col-md-6 col-lg-6 col-4"><a class="item item_link" href="#">Помощь при вступлении в СРО  и подготовке специалистов
+          <div class="mt-1 col-stretch col-sm-12 col-md-6 col-lg-6 col-4"><a class="item item_link" href="#">Помощь при вступлении в СРО  и подготовке специалистов
               <div class="item_link__intro">8 программ</div></a>
           </div>
-          <div class="mt-1 col-sm-12 col-md-6 col-lg-6 col-4"><a class="item item_link" href="#">Разработка документов по охране труда (СУОТ)
+          <div class="mt-1 col-stretch col-sm-12 col-md-6 col-lg-6 col-4"><a class="item item_link" href="#">Разработка документов по охране труда (СУОТ)
               <div class="item_link__intro">8 программ</div></a>
           </div>
-          <div class="mt-1 col-sm-12 col-md-6 col-lg-6 col-4"><a class="item item_link" href="#">Специальная оценка условий труда (СОУТ)
+          <div class="mt-1 col-stretch col-sm-12 col-md-6 col-lg-6 col-4"><a class="item item_link" href="#">Специальная оценка условий труда (СОУТ)
               <div class="item_link__intro">8 программ</div></a>
           </div>
-          <div class="mt-1 col-sm-12 col-md-6 col-lg-6 col-4"><a class="item item_link" href="#">Помощь при проверках надзорных органов
+          <div class="mt-1 col-stretch col-sm-12 col-md-6 col-lg-6 col-4"><a class="item item_link" href="#">Помощь при проверках надзорных органов
               <div class="item_link__intro">8 программ</div></a>
           </div>
         </div>
       </div>
-      <div class="content pt-5 pb-5 mt-1">
+      <div class="content pt-5 pb-5 mt-1 pt-sm-3 pb-sm-2 mt-sm-0">
         <div class="row">
-          <div class="col-8">
+          <div class="col-8 col-sm-12 col-md-6">
             <p class="h3 content__title">Программы обучения</p>
           </div>
-          <div class="col-4 text-right"> <a class="btn btn_action btn_small" href="#">Все образовательные программы</a></div>
+          <div class="col-4 text-right d-sm-none col-md-6"><a class="btn btn_action btn_small" href="#">Все образовательные программы</a></div>
         </div>
-        <div class="row mt-1">
-          <div class="col-4 mt-1 col-stretch">
+        <div class="row mt-1 mt-sm-0">
+          <div class="col-4 mt-1 col-stretch col-sm-12 col-lg-6">
             <div class="item item_programm">
               <div class="item_programm__inform" href="#"></div><a class="item_programm__title" href="#">Курсы первой помощи для руководителей и&nbsp;сотрудников</a>
               <div class="item_programm__content">
@@ -238,7 +240,7 @@
               </div>
             </div>
           </div>
-          <div class="col-4 mt-1 col-stretch">
+          <div class="col-4 mt-1 col-stretch col-sm-12 col-lg-6">
             <div class="item item_programm">
               <div class="item_programm__inform" href="#"></div><a class="item_programm__title" href="#">Целевое обучение</a>
               <div class="item_programm__content">
@@ -256,7 +258,7 @@
               </div>
             </div>
           </div>
-          <div class="col-4 mt-1 col-stretch">
+          <div class="col-4 mt-1 col-stretch col-sm-12 col-lg-6">
             <div class="item item_programm">
               <div class="item_programm__inform" href="#"></div><a class="item_programm__title" href="#">Курсы первой помощи для руководителей и&nbsp;сотрудников</a>
               <div class="item_programm__content">
@@ -275,29 +277,30 @@
             </div>
           </div>
         </div>
+        <div class="d-none d-sm-block mt-sm-1"> <a class="btn btn_action btn_small" href="#">Все образовательные программы</a></div>
       </div>
     </section>
-    <aside class="bg-light-grey pt-4 pb-4">
+    <aside class="bg-light-grey pt-4 pb-4 pt-sm-3 pb-sm-3">
       <div class="container"> 
         <div class="row"> 
-          <div class="col-8">
+          <div class="col-8 col-lg-12">
             <div class="content content_action">
-              <p class="h4 content__title">Акции и спецпредложения</p>
+              <p class="h4 content__title mb-sm-1">Акции и спецпредложения</p>
               <div class="row"> 
-                <div class="col-6 mb-1">
-                  <div class="item item_sale"> <img class="img-fluid item_sale__icon" src="../icon/sale.png"/>
+                <div class="col-6 mb-1 col-sm-12">
+                  <div class="item item_sale"> <img class="img-fluid item_sale__icon" src="../icon/sale-invite.png"/>
                     <p class="item_sale__title">Приведи друга</p>
                     <p class="item_sale__intro">Скидка 10% на следующие заказы</p>
                   </div>
                 </div>
-                <div class="col-6 mb-1">
-                  <div class="item item_sale"> <img class="img-fluid item_sale__icon" src="../icon/gift.png"/>
+                <div class="col-6 mb-1 col-sm-12">
+                  <div class="item item_sale"> <img class="img-fluid item_sale__icon" src="../icon/sale-gift-delivery.png"/>
                     <p class="item_sale__title">Бесплатная доставка</p>
                     <p class="item_sale__intro">Доставка документов по СПб</p>
                   </div>
                 </div>
-                <div class="col-6">
-                  <div class="item item_sale"> <img class="img-fluid item_sale__icon" src="../icon/sale.png"/>
+                <div class="col-6 col-sm-12">
+                  <div class="item item_sale"> <img class="img-fluid item_sale__icon" src="../icon/sale-docs.png"/>
                     <p class="item_sale__title">Договор на год</p>
                     <p class="item_sale__intro">-10% при заключении договора на год</p>
                   </div>
@@ -305,7 +308,7 @@
               </div>
             </div>
           </div>
-          <div class="col-4 col-stretch">
+          <div class="col-4 col-stretch col-lg-12 mt-lg-2">
             <div class="steps">
               <div class="label label_action">Как устроена работа УЦ?</div>
               <div class="steps__list">
@@ -319,10 +322,10 @@
         </div>
       </div>
     </aside>
-    <aside class="pt-4 pb-4">
+    <aside class="pt-4 pb-4 pt-sm-3 pb-sm-3">
       <div class="container"> 
         <div class="row"> 
-          <div class="col-4"> 
+          <div class="col-4 col-md-12 col-lg-6">
             <p class="h4 content__title mb-2">Новости учебного центра</p><a class="item item_news" href="text.html">
               <div class="item_news__date">30.08.2021</div>
               <div class="item_news__title">Приглашение на работу</div></a><a class="item item_news" href="text.html">
@@ -333,7 +336,7 @@
               <div class="item_news__date">30.08.2021</div>
               <div class="item_news__title">Приглашение на работу</div></a>
           </div>
-          <div class="col-8">
+          <div class="col-8 col-md-12 col-lg-6 mt-md-2">
             <p class="h4 content__title mb-2">Отзывы клиентов центра</p>
             <div class="slider slider_review">
               <div class="slider_review__arrows">
@@ -380,13 +383,13 @@
             </div>
           </div>
         </div>
-        <div class="content content_secondary mt-4"> 
+        <div class="content content_secondary mt-4 mt-sm-3">
           <div class="row"> 
-            <div class="col-4">
+            <div class="col-4 col-xl-5 col-lg-12">
               <p class="content__title h3">Остались вопросы? Задайте их нам</p>
               <p>Специалисты учебного центра оперативно ответят на любые ваши вопросы</p>
             </div>
-            <div class="col-8">
+            <div class="col-8 col-xl-7 col-lg-12">
               <div class="content__cta-form"> 
                 <form class="form form_cta" action="">
                   <input class="input input_full" type="text" placeholder="Ваш вопрос"/>
@@ -402,7 +405,7 @@
         </div>
       </div>
     </aside>
-    <section class="container pb-5">
+    <section class="container pb-5 pb-sm-3">
       <div class="content">
         <p class="h4 content__title">Учебный центр в Санкт-Петербурге «Консул»</p>
         <div class="content__toggle">
@@ -454,8 +457,8 @@
       </div>
     </footer>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" rel="stylesheet"/>
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+    <link href="./css/jquery.fancybox.min.css" rel="stylesheet"/>
+    <script src="./js/jquery.fancybox.min.js"></script>
     <script src="./js/jquery.inputmask.min.js"></script>
     <script src="./js/app.min.js"></script>
   </body>

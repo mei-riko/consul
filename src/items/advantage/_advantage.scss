@@ -23,3 +23,26 @@
         margin-bottom: $spacer-gutter/2;
     }
 }
+// < 1440px
+@media all and (max-width: map-get($grid-breakpoints, 'xl')){
+    .advantage{
+        grid-template-columns: 64px auto;
+
+        &__icon{
+            width: 64px;
+            height: 64px;
+        }
+    }
+}
+// < 768px
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .advantage{
+        grid-template-columns: 1fr;
+    }
+}
+// < 576px
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .advantage{
+        grid-template-columns: 64px auto;
+    }
+}

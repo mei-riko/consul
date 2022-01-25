@@ -23,3 +23,42 @@
         grid-gap: map-get($map: $spacers, $key: 3);
     }
 }
+// < 1440px
+@media all and (max-width: map-get($grid-breakpoints, 'xl')){
+    .slider_sales{
+        &__item{
+            grid-gap: map-get($map: $spacers, $key: 2);
+        }
+    }
+}
+// < 1024px
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .slider_sales{
+        padding-bottom: map-get($map: $spacers, $key: 3);
+        
+        &__title{
+            font-size: map-get($map: $heading, $key: h4);
+        }
+        &__item{
+            grid-template-columns: 1fr 1fr;
+            grid-gap: map-get($map: $spacers, $key: 1);
+        }
+        &__nav{
+            transform: translateX($spacer/2);
+        }
+    }
+}
+// < 768px
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .slider_sales{
+
+        &__nav{
+            left: 0;
+            transform: unset;
+        }
+        &__item{
+            grid-template-columns: 1fr;
+            grid-gap: map-get($map: $spacers, $key: 1);
+        }
+    }
+}
