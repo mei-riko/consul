@@ -21,8 +21,8 @@
         margin-left: 0;
     }
 }
-// < 375px
-@media all and (max-width: map-get($grid-breakpoints, 'xs')){
+// < 576px
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
     .form_cta{
         &__row{
             grid-template-columns: 1fr;

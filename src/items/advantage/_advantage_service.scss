@@ -4,3 +4,22 @@
     grid-template-columns: 48px auto;
     align-items: center;
 }
+
+// < 1440px
+@media all and (max-width: map-get($grid-breakpoints, 'xl')){
+    .advantage_service{
+        grid-template-columns: 48px auto;
+    }
+}
+// < 768px
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .advantage_service{
+        grid-template-columns: 1fr;
+    }
+}
+// < 576px
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .advantage_service{
+        grid-template-columns: 48px auto;
+    }
+}
