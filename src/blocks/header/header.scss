@@ -1,4 +1,6 @@
 .header{
+    position: relative;
+
     padding: map-get($map: $spacers, $key: 2) 0;
     background: $black;
     color: $white;
@@ -71,8 +73,12 @@
         text-align: right;
         filter: opacity(.75);
     }
-    &__toggle{
+
+    // Mobile
+    &__mobile{
         display: none;
+    }
+    &__toggle{
         height: 30px;
         cursor: pointer;
         transition: $transition-base;
@@ -81,16 +87,117 @@
             filter: opacity(.4);
         }
     }
-    &__child-nav{
-        display: none;
-    }
 }
 // < 1440px
 @media all and (max-width: map-get($grid-breakpoints, 'xl')){
+    .header{
+        &__grid{
+            grid-template-columns: 140px auto auto 120px;
+        }
+        &__phone{
+            font-size: map-get($map: $heading, $key: h6);
+        }
+        &__contact-item{
+            padding-left: $spacer-gutter;
+        }
+    }
 }
 // < 1024px
 @media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .header{
+        &__grid{
+            grid-template-columns: 140px auto 160px;
+            grid-template-areas:
+                "logo subnav phone"
+                "nav nav info";
+        }
+        &__inform{
+            // display: none;
+        }
+        &__contact{
+            display: none;
+        }
+    }
 }
 // < 768px
 @media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .header{
+        padding: $spacer 0;
+        
+        &__mobile{
+            display: flex;
+            justify-content: space-between;
+        }
+        &__link{
+            display: inline-flex;
+            align-items: center;
+
+            &_desktop{
+                display: none;
+            }
+        }
+
+        &__grid{
+            display: none;
+
+            grid-template-columns: auto 160px;
+            grid-template-areas:
+                "nav nav"
+                "subnav subnav"
+                "contact info"
+                "phone phone"
+                ;
+            padding-top: $spacer;
+
+            &--active{
+                display: grid;
+            }
+        }
+        &__contact{
+            display: block;
+            &-item{
+                padding-left: 0;
+                padding-right: $spacer;
+            }
+        }
+        &__phone{
+            text-align: left;
+        }
+
+        &__toggle{
+            rect{
+                transition: $transition-base;
+            }
+
+            &--open{
+                rect:nth-child(1){
+                    transform: rotate(30deg) translateY(4px);
+                    transform-origin: center;
+                }
+                rect:nth-child(2){
+                    transform: rotate(-30deg) translateY(-4px);
+                    transform-origin: center;
+                }
+            }
+        }
+    }
+}
+
+// < 576px
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .header{
+        &__grid{
+            grid-template-columns: auto;
+            grid-template-areas:
+                "nav"
+                "subnav"
+                "phone"
+                "contact"
+                "info"
+                ;
+        }
+        &__inform{
+            text-align: left;
+        }
+    }
 }

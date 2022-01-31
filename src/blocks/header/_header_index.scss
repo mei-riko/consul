@@ -1,3 +1,10 @@
 .header_index{
     padding: map-get($map: $spacers, $key: 2) 0 map-get($map: $spacers, $key: 4);
 }
+
+// < 768px
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .header_index{
+        padding: $spacer 0;
+    }
+}

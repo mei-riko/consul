@@ -1,7 +1,14 @@
 header.header(class=headerClass)
     .container
-        .header__grid
+        .header__mobile
             a.header__link(href="index.html")
+                img.header__logo(src="./icon/logo.svg")
+            svg.header__toggle(width="28" height="10" viewBox="0 0 28 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+                rect(width="28" height="2" rx="1" fill="#ffffff")
+                rect(y="8" width="28" height="2" rx="1" fill="#ffffff")
+
+        .header__grid
+            a.header__link.header__link_desktop(href="index.html")
                 img.header__logo(src="./icon/logo.svg")
             .header__nav-additional
                 nav.nav.nav_additional
@@ -24,28 +31,28 @@ header.header(class=headerClass)
             .header__inform c 8 до 20 по рабочим дням
             .header__nav 
                 nav.nav
-                    a.nav__item(href="catalog.html" data-href="study") Обучение
-                    a.nav__item(href="catalog.html" data-href="security") Служба охраны труда
+                    .nav__item.nav__item_has-child
+                        a.nav__link.nav__link_parent(href="catalog.html" data-nav="#study") Обучение
+                        .nav__children#study(class=navClass)
+                            .container
+                                nav.nav.nav_children
+                                    a.nav__item.nav__item_child(href="#") Охрана труда
+                                    a.nav__item.nav__item_child(href="#") Повышения квалификации
+                                    a.nav__item.nav__item_child(href="#") Целевое обучение
+                                    a.nav__item.nav__item_child(href="#") Пожарно-технический минимум (ПТМ)
+                                    a.nav__item.nav__item_child(href="#") Профессиональные переподготовки
+                                    a.nav__item.nav__item_child(href="#") Рабочие специальности
+                                    a.nav__item.nav__item_child(href="#") Первая помощь
+                    .nav__item.nav__item_has-child
+                        a.nav__link.nav__link_parent(href="catalog.html" data-nav="#security") Служба охраны труда
+                        .nav__children#security(class=navClass)
+                            .container
+                                nav.nav.nav_children
+                                    a.nav__item.nav__item_child(href="#") Аутсорсинг по охране труда
+                                    a.nav__item.nav__item_child(href="#") Разработка документов по охране труда (СУОТ)
+                                    a.nav__item.nav__item_child(href="#") Помощь при расследовании несчастных случаев
+                                    a.nav__item.nav__item_child(href="#") Помощь при проверках надзорных органов
+                                    a.nav__item.nav__item_child(href="#") Специальная оценка условий труда (СОУТ)
                     a.nav__item(href="job.html") Вакансии
                     a.nav__item(href="store.html") Магазин
-            svg.header__toggle(width="28" height="10" viewBox="0 0 28 10" fill="none" xmlns="http://www.w3.org/2000/svg")
-                rect(width="28" height="2" rx="1" fill="#ffffff")
-                rect(y="8" width="28" height="2" rx="1" fill="#ffffff")
-    .header__child-nav#study
-        .container
-            nav.nav.nav_children
-                a.nav__item.nav__item_child(href="#") Охрана труда
-                a.nav__item.nav__item_child(href="#") Повышения квалификации
-                a.nav__item.nav__item_child(href="#") Целевое обучение
-                a.nav__item.nav__item_child(href="#") Пожарно-технический минимум (ПТМ)
-                a.nav__item.nav__item_child(href="#") Профессиональные переподготовки
-                a.nav__item.nav__item_child(href="#") Рабочие специальности
-                a.nav__item.nav__item_child(href="#") Первая помощь
-    .header__child-nav#security
-        .container
-            nav.nav.nav_children
-                a.nav__item.nav__item_child(href="#") Аутсорсинг по охране труда
-                a.nav__item.nav__item_child(href="#") Разработка документов по охране труда (СУОТ)
-                a.nav__item.nav__item_child(href="#") Помощь при расследовании несчастных случаев
-                a.nav__item.nav__item_child(href="#") Помощь при проверках надзорных органов
-                a.nav__item.nav__item_child(href="#") Специальная оценка условий труда (СОУТ)
+        

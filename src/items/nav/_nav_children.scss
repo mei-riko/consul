@@ -1,0 +1,12 @@
+.nav_children{
+    display: grid;
+    grid-gap: $spacer;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+// < 768px
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .nav_children{
+        grid-gap: $spacer-gutter;
+    }
+}

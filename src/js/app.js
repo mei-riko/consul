@@ -57,4 +57,4 @@ import './mouseup';
 import '../items/input/input';
 import '../items/slider/slider';
 import '../items/toggle/toggle';
-// import '../blocks/header/header';
+import '../blocks/header/header';
