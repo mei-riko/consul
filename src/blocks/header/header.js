@@ -25,6 +25,7 @@ function navUnHover(){
 function navbarDesktopInitialize( itemNav ){
     // Desktop Hover Nav
     let timeout = null;
+    if( itemNav.closest('.nav').hasClass('nav--mobile') ){ return false; }
     // Задержка скрытия меню 0.3сек
     itemNav
         .mouseenter(function(event){
@@ -48,7 +49,7 @@ function openNavbarOnClick( itemNav ){
     $item.on('click', function(e){
         e.preventDefault();
         let nav = $(this).data("nav");
-        console.log( $parentHeader.find(".nav .nav__children" + nav) );
+        // console.log( $parentHeader.find(".nav .nav__children" + nav) );
         $parentHeader.find(".nav .nav__children" + nav).slideToggle();
     });
 }

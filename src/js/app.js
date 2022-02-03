@@ -54,7 +54,10 @@ $(function() {
 });
 
 import './mouseup';
+
 import '../items/input/input';
 import '../items/slider/slider';
 import '../items/toggle/toggle';
+import '../items/poll/poll';
+
 import '../blocks/header/header';

@@ -1,0 +1,83 @@
+.poll{
+    &__title{
+        font-weight: $font-weight-bold;
+    }
+    &__row{
+        position: relative;
+
+        display: grid;
+        grid-gap: $spacer-gutter;
+        grid-template-columns: 240px 1fr;
+        align-items: center;
+
+        margin-bottom: $spacer-gutter;
+    }
+    &__count{
+        display: grid;
+        grid-gap: $spacer-gutter;
+        grid-template-columns: 80px 80px auto;
+        align-items: center;
+    }
+    &__delete{
+        position: absolute;
+        right: 0;
+        width: 24px;
+        height: 24px;
+        line-height: 1;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: $grey;
+
+        border-radius: 50%;
+    }
+
+    &__select{
+        width: 100%;
+        padding: $spacer-gutter;
+    }
+    &__input{
+        padding: $spacer-gutter;
+    }
+    &__label{
+        margin: 0;
+        font-size: map-get($map: $font-size, $key: xs);
+        line-height: $headings-line-height;
+    }
+    &__add{
+        font-weight: $font-weight-bold;
+        text-decoration: underline;
+
+        margin: $spacer-gutter 0;
+    }
+    &__result{
+        padding: $spacer;
+        background-color: $grey;
+        border: 1px solid $brown-light;
+
+        display: grid;
+        grid-gap: $spacer-gutter;
+        grid-template-columns: repeat(1, 1fr);
+
+        &-col{
+            display: grid;
+            grid-gap: $spacer-gutter;
+            grid-template-columns: auto 1fr;
+        }
+    }
+    &__subtitle{
+        margin: 0;
+    }
+    &__value{
+        text-align: right;
+    }
+    &__btn{
+        margin-top: $spacer;
+    }
+    &__step{
+        &_form{
+            display: none;
+        }
+    }
+}
