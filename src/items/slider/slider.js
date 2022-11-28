@@ -86,10 +86,29 @@ $(function() {
         }
     }
     if( $( '.slider.slider_licences' ).length > 0 ){
-        sliderLicences();
+        // sliderLicences();
+        sliderClassAdd( '.slider.slider_licences' );
+        if( !$( '.slider.slider_licences' ).hasClass('swiper-initialized') ){
+            const swiper = new Swiper('.slider.slider_licences', {
+                // Optional parameters
+                loop: true,
+                slidesPerView: 1,
+                spaceBetween: 12,
+                breakpoints: {
+                    440: {
+                        slidesPerView: 2,
+                        spaceBetween: 12,
+                    },
+                    577: {
+                        slidesPerView: 3,
+                        spaceBetween: 24,
+                    },
+                },
+            });
+        }
     }
 });
 // Resize
-$(window).on("resize", function(){
-    sliderLicences();
-});
+// $(window).on("resize", function(){
+//     sliderLicences();
+// });
