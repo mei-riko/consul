@@ -130,6 +130,7 @@
   -webkit-box-shadow: none;
   box-shadow: none;
   text-decoration: none;
+  text-align: center;
   font-size: 14px;
   line-height: 1.4;
   font-weight: 700;
@@ -137,6 +138,10 @@
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+}
+
+.btn--full {
+  width: 100%;
 }
 
 .btn:hover, .btn:focus {
@@ -155,6 +160,19 @@
 .btn_action:hover, .btn_action:focus {
   background-color: #9b6b25;
   color: #ffffff;
+}
+
+.btn_secondary {
+  border-radius: 4px;
+  color: #C4872F;
+  border: 1px solid #C4872F;
+  text-align: center;
+  padding: 12px 24px;
+}
+
+.btn_secondary:hover, .btn_secondary:focus {
+  border-color: #9b6b25;
+  color: #9b6b25;
 }
 
 .btn_small {

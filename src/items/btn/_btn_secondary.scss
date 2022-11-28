@@ -1,0 +1,17 @@
+.btn_secondary{
+    border-radius: $border-radius;
+    color: $yellow;
+    border: 1px solid $yellow;
+    text-align: center;
+
+    padding: $spacer/2 $spacer;
+
+    &:hover, &:focus{
+        border-color: darken($color: $yellow, $amount: 10);
+        color: darken($color: $yellow, $amount: 10);
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+}
+@media all and (max-width: map-get($grid-breakpoints, 'xs')){
+}
