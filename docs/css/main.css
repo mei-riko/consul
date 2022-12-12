@@ -499,7 +499,12 @@
 
 .slider_licences.swiper-initialized {
   padding-right: 36px;
+  padding-bottom: 36px;
   overflow: visible;
+}
+
+.slider_licences.swiper-initialized .swiper-pagination-bullets {
+  bottom: 0px;
 }
 
 .advantage {

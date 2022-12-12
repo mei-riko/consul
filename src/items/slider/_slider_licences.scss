@@ -1,6 +1,11 @@
 .slider_licences{
     &.swiper-initialized{
         padding-right: map-get($map: $spacers, $key: 2);
+        padding-bottom: map-get($map: $spacers, $key: 2);
         overflow: visible;
+
+        .swiper-pagination-bullets{
+            bottom: 0px;
+        }
     }
 }

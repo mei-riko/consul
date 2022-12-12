@@ -10,32 +10,32 @@ const sliderClassRemove = ( container ) => {
     $( container ).find('.slider__wrapper').removeClass('swiper-wrapper');
     $( container ).find('.slider__slide').removeClass('swiper-slide');
 };
-const sliderLicences = () => {
-    sliderClassAdd( '.slider.slider_licences' );
-    if ( $(window).width() < 577 || window.matchMedia('screen and (max-width: 576px)').matches ){
-        if( !$( '.slider.slider_licences' ).hasClass('swiper-initialized') ){
-            const swiper = new Swiper('.slider.slider_licences', {
-                // Optional parameters
-                loop: false,
-                slidesPerView: 1,
-                spaceBetween: 12,
-                breakpoints: {
-                    440: {
-                        slidesPerView: 2,
-                        spaceBetween: 12,
-                    },
-                },
-            });
-        }
-    }else{
-        $( $( '.slider.slider_licences' ) ).each(function(){
-            if( $(this).hasClass('swiper-initialized') ){
-                this.swiper.destroy(true, true);
-            }
-            sliderClassRemove( $(this) );
-        });
-    }
-}
+// const sliderLicences = () => {
+//     sliderClassAdd( '.slider.slider_licences' );
+//     if ( $(window).width() < 577 || window.matchMedia('screen and (max-width: 576px)').matches ){
+//         if( !$( '.slider.slider_licences' ).hasClass('swiper-initialized') ){
+//             const swiper = new Swiper('.slider.slider_licences', {
+//                 // Optional parameters
+//                 loop: false,
+//                 slidesPerView: 1,
+//                 spaceBetween: 12,
+//                 breakpoints: {
+//                     440: {
+//                         slidesPerView: 2,
+//                         spaceBetween: 12,
+//                     },
+//                 },
+//             });
+//         }
+//     }else{
+//         $( $( '.slider.slider_licences' ) ).each(function(){
+//             if( $(this).hasClass('swiper-initialized') ){
+//                 this.swiper.destroy(true, true);
+//             }
+//             sliderClassRemove( $(this) );
+//         });
+//     }
+// }
 $(function() {
     if( $( '.slider.slider_sales' ).length > 0 ){
         sliderClassAdd( '.slider.slider_sales' );
@@ -91,9 +91,14 @@ $(function() {
         if( !$( '.slider.slider_licences' ).hasClass('swiper-initialized') ){
             const swiper = new Swiper('.slider.slider_licences', {
                 // Optional parameters
-                loop: true,
+                loop: false,
                 slidesPerView: 1,
                 spaceBetween: 12,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                    type: 'bullets',
+                },
                 breakpoints: {
                     440: {
                         slidesPerView: 2,
